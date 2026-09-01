@@ -1,0 +1,124 @@
+{
+ "surum": "v2-stil-kaydirma",
+ "rol_sabitler": {
+  "beta": 0.35,
+  "s": 0.55,
+  "kapi_z0": 1.5,
+  "kapi_s": 0.6,
+  "coverage": 0.5,
+  "ca_tavan_bonus": 2.0
+ },
+ "formuller": {
+  "sekil": "Σ cw[a]·(pct[a] − ort(pct)) / Σ|cw[a]|   (|cw|<0.05 ve kontrast_haric atlanır)",
+  "rwa": "Σ w[a]·BS[a] / Σ w[a]",
+  "uyum": "σ((z_şekil + beta·max(0,z_seviye) − med_e)/s)",
+  "sira": "RWA × σ((z_şekil + kapi_z0)/kapi_s)",
+  "ca_rol": "en-iyi-uyum rolü = yuvarlanmış CA; diğerleri rwa oranı; tavan CA + ca_tavan_bonus"
+ },
+ "stil_kaydirma": {
+  "aciklama": "Rol taban vektörü (DG) grup çarpanlarıyla kaydırılır, sonra 100e normalize edilir.",
+  "stiller": {
+   "HC": "Hücum Çıkışlı",
+   "DG": "Dengeli (taban)",
+   "SV": "Savunma Ağırlıklı"
+  },
+  "carpanlar": {
+   "HC": {
+    "HUC": 1.4,
+    "SAV": 0.7,
+    "NOTR": 1.0
+   },
+   "DG": {
+    "HUC": 1.0,
+    "SAV": 1.0,
+    "NOTR": 1.0
+   },
+   "SV": {
+    "HUC": 0.7,
+    "SAV": 1.4,
+    "NOTR": 1.0
+   }
+  },
+  "gruplar": {
+   "SAV": [
+    "Markaj",
+    "Top Kapma",
+    "Mevki Alma",
+    "Önsezi",
+    "Konsantrasyon",
+    "Agresiflik",
+    "Cesaret",
+    "FC_Top Kesmeler",
+    "Bölge Hakimiyeti",
+    "Hava Topları",
+    "Birebir",
+    "Refleksler",
+    "Elle Kontrol",
+    "Yumruklama",
+    "Ani Çıkış Eğilimi"
+   ],
+   "HUC": [
+    "Bitiricilik",
+    "Topsuz Alan",
+    "Dripling",
+    "Özel Yetenek",
+    "Orta Yapma",
+    "Uzaktan Şut",
+    "Vizyon",
+    "Pas",
+    "FC_Şut Gücü",
+    "FC_Zayıf Ayak",
+    "Elle Oyun Başlatma",
+    "Degaj"
+   ],
+   "NOTR": [
+    "Karar Alma",
+    "İlk Kontrol",
+    "Teknik",
+    "İşbirliği",
+    "Soğukkanlılık",
+    "Denge",
+    "Vücut Zindeliği",
+    "Liderlik",
+    "Kararlılık",
+    "Çalışkanlık",
+    "Dayanıklılık",
+    "Hız",
+    "Hızlanma",
+    "Çeviklik",
+    "Güç",
+    "Zıplama",
+    "İletişim",
+    "Eksantriklik",
+    "Kafa Vuruşu",
+    "FC_Patlayıcılık",
+    "FC_Uzun Adım"
+   ]
+  },
+  "normalizasyon": "kaydırma sonrası Σw = 100",
+  "kimlik_kilidi": {
+   "aciklama": "Bu rollerde listelenen grup stille değişmez (çarpan 1.0). Rol kimliğini korur.",
+   "roller": {
+    "POA": [
+     "SAV"
+    ],
+    "TF": [
+     "SAV"
+    ],
+    "9": [
+     "SAV"
+    ],
+    "CAK": [
+     "HUC"
+    ],
+    "CIZGI": [
+     "HUC"
+    ],
+    "ANCHOR": [
+     "HUC"
+    ]
+   }
+  }
+ },
+ "not": "HC/DG/SV ağırlıkları roller.json içinde ÖNCEDEN PİŞİRİLMİŞ olarak da bulunur; motor isterse buradaki çarpanlarla runtime türetebilir. İkisi aynı sonucu verir."
+}

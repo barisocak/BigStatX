@@ -1,0 +1,5515 @@
+{
+ "meta": {
+  "surum": "v6.1-stil-entegre",
+  "taban": "v6-semantik-denetimli (FM_FC_SOZLUK_ESLEME.md)",
+  "normalizasyon": "her rol ve her stil TAM 100.00",
+  "uyumluluk": "build_rol_layer 'agirliklar' anahtarını okur (=DG tabanı); 'stiller' opsiyoneldir",
+  "stil_kaynagi": "uyum_kalibrasyon.json grup çarpanlarından türetildi (el yazımı tablo DEĞİL)",
+  "havuz_kurali": "FM_Mevki parse -> uygunluk seti (Pozisyon sütunu DEĞİL; %18 kirli)",
+  "rol_sayisi": 32,
+  "rol_sabitler": {
+   "beta": 0.35,
+   "s": 0.55,
+   "kapi_z0": 1.5,
+   "kapi_s": 0.6,
+   "coverage": 0.5
+  }
+ },
+ "roller": {
+  "GK_KL_GK": {
+   "pozisyon": "GK",
+   "kod": "KL_GK",
+   "ad": "Klasik Kaleci",
+   "agirliklar": {
+    "Refleksler": {
+     "w": 11.1,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Mevki Alma": {
+     "w": 8.6,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Elle Kontrol": {
+     "w": 7.9,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Hava Topları": {
+     "w": 7.5,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Birebir": {
+     "w": 7.2,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 7.0,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Bölge Hakimiyeti": {
+     "w": 6.6,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "İletişim": {
+     "w": 5.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 4.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 4.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 4.2,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Elle Oyun Başlatma": {
+     "w": 3.8,
+     "kaynak": "FM-only",
+     "grup": "HUC"
+    },
+    "Degaj": {
+     "w": 3.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Zıplama": {
+     "w": 3.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 2.2,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Yumruklama": {
+     "w": 2.0,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 1.2,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 1.2,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 0.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Refleksler": 9.24,
+     "Mevki Alma": 7.16,
+     "Elle Kontrol": 6.58,
+     "Hava Topları": 6.24,
+     "Birebir": 6.0,
+     "Konsantrasyon": 5.83,
+     "Bölge Hakimiyeti": 5.5,
+     "İletişim": 6.78,
+     "Soğukkanlılık": 5.59,
+     "Karar Alma": 5.23,
+     "Çeviklik": 5.11,
+     "Önsezi": 3.5,
+     "Elle Oyun Başlatma": 6.33,
+     "Degaj": 6.33,
+     "Zıplama": 3.57,
+     "Güç": 3.33,
+     "Cesaret": 1.83,
+     "Yumruklama": 1.67,
+     "Hızlanma": 1.43,
+     "Denge": 1.43,
+     "Pas": 1.33
+    },
+    "DG": {
+     "Refleksler": 11.1,
+     "Mevki Alma": 8.6,
+     "Elle Kontrol": 7.9,
+     "Hava Topları": 7.5,
+     "Birebir": 7.2,
+     "Konsantrasyon": 7.0,
+     "Bölge Hakimiyeti": 6.6,
+     "İletişim": 5.7,
+     "Soğukkanlılık": 4.7,
+     "Karar Alma": 4.4,
+     "Çeviklik": 4.3,
+     "Önsezi": 4.2,
+     "Elle Oyun Başlatma": 3.8,
+     "Degaj": 3.8,
+     "Zıplama": 3.0,
+     "Güç": 2.8,
+     "Cesaret": 2.2,
+     "Yumruklama": 2.0,
+     "Hızlanma": 1.2,
+     "Denge": 1.2,
+     "Pas": 0.8
+    },
+    "SV": {
+     "Refleksler": 12.61,
+     "Mevki Alma": 9.77,
+     "Elle Kontrol": 8.98,
+     "Hava Topları": 8.52,
+     "Birebir": 8.18,
+     "Konsantrasyon": 7.95,
+     "Bölge Hakimiyeti": 7.5,
+     "İletişim": 4.63,
+     "Soğukkanlılık": 3.81,
+     "Karar Alma": 3.57,
+     "Çeviklik": 3.49,
+     "Önsezi": 4.77,
+     "Elle Oyun Başlatma": 2.16,
+     "Degaj": 2.16,
+     "Zıplama": 2.44,
+     "Güç": 2.27,
+     "Cesaret": 2.5,
+     "Yumruklama": 2.27,
+     "Hızlanma": 0.97,
+     "Denge": 0.97,
+     "Pas": 0.45
+    }
+   }
+  },
+  "GK_CIZGI": {
+   "pozisyon": "GK",
+   "kod": "CIZGI",
+   "ad": "Çizgi Kalecisi",
+   "agirliklar": {
+    "Refleksler": {
+     "w": 14.81,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Mevki Alma": {
+     "w": 14.21,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Elle Kontrol": {
+     "w": 12.11,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Birebir": {
+     "w": 10.61,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 10.21,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Bölge Hakimiyeti": {
+     "w": 7.61,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 7.01,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hava Topları": {
+     "w": 5.71,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 5.01,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 3.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.9,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 2.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 1.6,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Refleksler": 13.48,
+     "Mevki Alma": 12.93,
+     "Elle Kontrol": 11.02,
+     "Birebir": 9.65,
+     "Konsantrasyon": 9.29,
+     "Bölge Hakimiyeti": 6.92,
+     "Karar Alma": 9.11,
+     "Hava Topları": 5.19,
+     "Soğukkanlılık": 6.51,
+     "Çeviklik": 4.94,
+     "Denge": 3.77,
+     "Hızlanma": 3.12,
+     "Zıplama": 2.6,
+     "Cesaret": 1.46
+    },
+    "DG": {
+     "Refleksler": 14.81,
+     "Mevki Alma": 14.21,
+     "Elle Kontrol": 12.11,
+     "Birebir": 10.61,
+     "Konsantrasyon": 10.21,
+     "Bölge Hakimiyeti": 7.61,
+     "Karar Alma": 7.01,
+     "Hava Topları": 5.71,
+     "Soğukkanlılık": 5.01,
+     "Çeviklik": 3.8,
+     "Denge": 2.9,
+     "Hızlanma": 2.4,
+     "Zıplama": 2.0,
+     "Cesaret": 1.6
+    },
+    "SV": {
+     "Refleksler": 15.86,
+     "Mevki Alma": 15.22,
+     "Elle Kontrol": 12.97,
+     "Birebir": 11.36,
+     "Konsantrasyon": 10.93,
+     "Bölge Hakimiyeti": 8.15,
+     "Karar Alma": 5.36,
+     "Hava Topları": 6.11,
+     "Soğukkanlılık": 3.83,
+     "Çeviklik": 2.91,
+     "Denge": 2.22,
+     "Hızlanma": 1.84,
+     "Zıplama": 1.53,
+     "Cesaret": 1.71
+    }
+   },
+   "kimlik_kilidi": [
+    "HUC"
+   ]
+  },
+  "GK_SW": {
+   "pozisyon": "GK",
+   "kod": "SW",
+   "ad": "Sweeper Kaleci",
+   "agirliklar": {
+    "Refleksler": {
+     "w": 8.73,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 7.62,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Mevki Alma": {
+     "w": 6.92,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 6.72,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Elle Oyun Başlatma": {
+     "w": 6.62,
+     "kaynak": "FM-only",
+     "grup": "HUC"
+    },
+    "Birebir": {
+     "w": 6.22,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Degaj": {
+     "w": 6.12,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Soğukkanlılık": {
+     "w": 5.32,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 5.32,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Elle Kontrol": {
+     "w": 5.12,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Ani Çıkış Eğilimi": {
+     "w": 5.12,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 5.02,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İletişim": {
+     "w": 3.81,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Bölge Hakimiyeti": {
+     "w": 3.61,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hava Topları": {
+     "w": 2.91,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Çeviklik": {
+     "w": 2.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 2.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 2.61,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Konsantrasyon": {
+     "w": 2.51,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "İlk Kontrol": {
+     "w": 2.51,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 1.81,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Refleksler": 6.5,
+     "Karar Alma": 8.12,
+     "Mevki Alma": 5.16,
+     "Önsezi": 5.01,
+     "Elle Oyun Başlatma": 9.87,
+     "Birebir": 4.64,
+     "Degaj": 9.12,
+     "Soğukkanlılık": 5.66,
+     "Vizyon": 7.92,
+     "Elle Kontrol": 3.81,
+     "Ani Çıkış Eğilimi": 3.81,
+     "Hızlanma": 5.34,
+     "İletişim": 4.06,
+     "Bölge Hakimiyeti": 2.69,
+     "Hava Topları": 2.17,
+     "Çeviklik": 2.88,
+     "Teknik": 2.88,
+     "Pas": 3.89,
+     "Konsantrasyon": 1.87,
+     "İlk Kontrol": 2.67,
+     "Denge": 1.92
+    },
+    "DG": {
+     "Refleksler": 8.73,
+     "Karar Alma": 7.62,
+     "Mevki Alma": 6.92,
+     "Önsezi": 6.72,
+     "Elle Oyun Başlatma": 6.62,
+     "Birebir": 6.22,
+     "Degaj": 6.12,
+     "Soğukkanlılık": 5.32,
+     "Vizyon": 5.32,
+     "Elle Kontrol": 5.12,
+     "Ani Çıkış Eğilimi": 5.12,
+     "Hızlanma": 5.02,
+     "İletişim": 3.81,
+     "Bölge Hakimiyeti": 3.61,
+     "Hava Topları": 2.91,
+     "Çeviklik": 2.71,
+     "Teknik": 2.71,
+     "Pas": 2.61,
+     "Konsantrasyon": 2.51,
+     "İlk Kontrol": 2.51,
+     "Denge": 1.81
+    },
+    "SV": {
+     "Refleksler": 10.82,
+     "Karar Alma": 6.75,
+     "Mevki Alma": 8.58,
+     "Önsezi": 8.33,
+     "Elle Oyun Başlatma": 4.1,
+     "Birebir": 7.71,
+     "Degaj": 3.79,
+     "Soğukkanlılık": 4.71,
+     "Vizyon": 3.29,
+     "Elle Kontrol": 6.34,
+     "Ani Çıkış Eğilimi": 6.34,
+     "Hızlanma": 4.44,
+     "İletişim": 3.37,
+     "Bölge Hakimiyeti": 4.48,
+     "Hava Topları": 3.61,
+     "Çeviklik": 2.4,
+     "Teknik": 2.4,
+     "Pas": 1.62,
+     "Konsantrasyon": 3.11,
+     "İlk Kontrol": 2.22,
+     "Denge": 1.6
+    }
+   }
+  },
+  "CB_KL_CB": {
+   "pozisyon": "CB",
+   "kod": "KL_CB",
+   "ad": "Klasik Stoper",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 9.01,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Markaj": {
+     "w": 8.91,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 8.01,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 7.11,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 6.31,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 6.21,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 5.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 5.61,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 5.51,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 4.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 3.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 3.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Vücut Zindeliği": {
+     "w": 2.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 2.6,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Pas": {
+     "w": 2.6,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "FC_Uzun Adım": {
+     "w": 1.9,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 1.7,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Liderlik": {
+     "w": 1.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 0.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 7.28,
+     "Markaj": 7.2,
+     "Top Kapma": 6.47,
+     "Hız": 8.2,
+     "Önsezi": 5.09,
+     "Kafa Vuruşu": 7.16,
+     "Güç": 6.58,
+     "Zıplama": 6.47,
+     "Konsantrasyon": 4.45,
+     "Karar Alma": 5.43,
+     "Cesaret": 3.8,
+     "Hızlanma": 5.2,
+     "Soğukkanlılık": 4.16,
+     "Dayanıklılık": 4.04,
+     "FC_Top Kesmeler": 2.34,
+     "Vücut Zindeliği": 3.0,
+     "Agresiflik": 2.1,
+     "Pas": 4.2,
+     "FC_Uzun Adım": 2.19,
+     "Denge": 1.96,
+     "Liderlik": 1.62,
+     "İşbirliği": 1.04
+    },
+    "DG": {
+     "Mevki Alma": 9.01,
+     "Markaj": 8.91,
+     "Top Kapma": 8.01,
+     "Hız": 7.11,
+     "Önsezi": 6.31,
+     "Kafa Vuruşu": 6.21,
+     "Güç": 5.71,
+     "Zıplama": 5.61,
+     "Konsantrasyon": 5.51,
+     "Karar Alma": 4.7,
+     "Cesaret": 4.7,
+     "Hızlanma": 4.5,
+     "Soğukkanlılık": 3.6,
+     "Dayanıklılık": 3.5,
+     "FC_Top Kesmeler": 2.9,
+     "Vücut Zindeliği": 2.6,
+     "Agresiflik": 2.6,
+     "Pas": 2.6,
+     "FC_Uzun Adım": 1.9,
+     "Denge": 1.7,
+     "Liderlik": 1.4,
+     "İşbirliği": 0.9
+    },
+    "SV": {
+     "Mevki Alma": 10.65,
+     "Markaj": 10.53,
+     "Top Kapma": 9.47,
+     "Hız": 6.0,
+     "Önsezi": 7.46,
+     "Kafa Vuruşu": 5.24,
+     "Güç": 4.82,
+     "Zıplama": 4.73,
+     "Konsantrasyon": 6.51,
+     "Karar Alma": 3.97,
+     "Cesaret": 5.56,
+     "Hızlanma": 3.8,
+     "Soğukkanlılık": 3.04,
+     "Dayanıklılık": 2.96,
+     "FC_Top Kesmeler": 3.43,
+     "Vücut Zindeliği": 2.2,
+     "Agresiflik": 3.08,
+     "Pas": 1.54,
+     "FC_Uzun Adım": 1.61,
+     "Denge": 1.44,
+     "Liderlik": 1.18,
+     "İşbirliği": 0.76
+    }
+   }
+  },
+  "CB_BPD": {
+   "pozisyon": "CB",
+   "kod": "BPD",
+   "ad": "Topla Oynayan Stoper",
+   "agirliklar": {
+    "Pas": {
+     "w": 8.81,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 7.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 7.51,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Mevki Alma": {
+     "w": 7.41,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 6.41,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "İlk Kontrol": {
+     "w": 5.91,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 5.81,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Markaj": {
+     "w": 5.61,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 4.6,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 4.6,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 3.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 3.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Zıplama": {
+     "w": 2.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 2.6,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 2.6,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.5,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 2.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.2,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "FC_Şut Gücü": {
+     "w": 1.5,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Topsuz Alan": {
+     "w": 1.2,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dayanıklılık": {
+     "w": 0.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Pas": 12.49,
+     "Karar Alma": 7.81,
+     "Vizyon": 10.65,
+     "Mevki Alma": 5.25,
+     "Top Kapma": 4.54,
+     "İlk Kontrol": 5.98,
+     "Soğukkanlılık": 5.88,
+     "Markaj": 3.97,
+     "Konsantrasyon": 3.34,
+     "Önsezi": 3.26,
+     "Kafa Vuruşu": 4.66,
+     "Teknik": 3.95,
+     "Güç": 3.55,
+     "Dripling": 3.97,
+     "Zıplama": 2.74,
+     "Cesaret": 1.85,
+     "Hız": 2.64,
+     "Denge": 2.53,
+     "Çeviklik": 2.53,
+     "Hızlanma": 2.23,
+     "FC_Top Kesmeler": 1.42,
+     "FC_Şut Gücü": 2.13,
+     "Topsuz Alan": 1.7,
+     "Dayanıklılık": 0.91
+    },
+    "DG": {
+     "Pas": 8.81,
+     "Karar Alma": 7.71,
+     "Vizyon": 7.51,
+     "Mevki Alma": 7.41,
+     "Top Kapma": 6.41,
+     "İlk Kontrol": 5.91,
+     "Soğukkanlılık": 5.81,
+     "Markaj": 5.61,
+     "Konsantrasyon": 4.7,
+     "Önsezi": 4.6,
+     "Kafa Vuruşu": 4.6,
+     "Teknik": 3.9,
+     "Güç": 3.5,
+     "Dripling": 2.8,
+     "Zıplama": 2.7,
+     "Cesaret": 2.6,
+     "Hız": 2.6,
+     "Denge": 2.5,
+     "Çeviklik": 2.5,
+     "Hızlanma": 2.2,
+     "FC_Top Kesmeler": 2.0,
+     "FC_Şut Gücü": 1.5,
+     "Topsuz Alan": 1.2,
+     "Dayanıklılık": 0.9
+    },
+    "SV": {
+     "Pas": 5.77,
+     "Karar Alma": 7.22,
+     "Vizyon": 4.92,
+     "Mevki Alma": 9.71,
+     "Top Kapma": 8.4,
+     "İlk Kontrol": 5.53,
+     "Soğukkanlılık": 5.44,
+     "Markaj": 7.35,
+     "Konsantrasyon": 6.17,
+     "Önsezi": 6.04,
+     "Kafa Vuruşu": 4.31,
+     "Teknik": 3.66,
+     "Güç": 3.28,
+     "Dripling": 1.84,
+     "Zıplama": 2.53,
+     "Cesaret": 3.41,
+     "Hız": 2.44,
+     "Denge": 2.34,
+     "Çeviklik": 2.34,
+     "Hızlanma": 2.06,
+     "FC_Top Kesmeler": 2.62,
+     "FC_Şut Gücü": 0.98,
+     "Topsuz Alan": 0.79,
+     "Dayanıklılık": 0.84
+    }
+   }
+  },
+  "CB_KEN": {
+   "pozisyon": "CB",
+   "kod": "KEN",
+   "ad": "Kenar Stoper",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 6.6,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 6.6,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Pas": {
+     "w": 6.6,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Markaj": {
+     "w": 5.8,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 5.8,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 5.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 5.0,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Çeviklik": {
+     "w": 5.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 5.0,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 5.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 4.6,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 3.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 3.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 3.3,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 3.1,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 3.1,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "FC_Uzun Adım": {
+     "w": 2.8,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Agresiflik": {
+     "w": 1.7,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Cesaret": {
+     "w": 1.7,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 1.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 1.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 1.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 0.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 4.86,
+     "Top Kapma": 4.86,
+     "Pas": 9.72,
+     "Markaj": 4.27,
+     "Önsezi": 4.27,
+     "Hızlanma": 6.1,
+     "Konsantrasyon": 3.68,
+     "Çeviklik": 5.26,
+     "Denge": 5.26,
+     "İlk Kontrol": 5.26,
+     "Hız": 4.84,
+     "Güç": 3.47,
+     "Dayanıklılık": 3.47,
+     "Orta Yapma": 4.86,
+     "Karar Alma": 3.26,
+     "Soğukkanlılık": 3.26,
+     "FC_Top Kesmeler": 2.14,
+     "FC_Uzun Adım": 2.95,
+     "Zıplama": 2.52,
+     "Vizyon": 3.53,
+     "Dripling": 3.53,
+     "Agresiflik": 1.25,
+     "Cesaret": 1.25,
+     "Kafa Vuruşu": 1.79,
+     "Çalışkanlık": 1.79,
+     "İşbirliği": 1.68,
+     "Vücut Zindeliği": 0.84
+    },
+    "DG": {
+     "Mevki Alma": 6.6,
+     "Top Kapma": 6.6,
+     "Pas": 6.6,
+     "Markaj": 5.8,
+     "Önsezi": 5.8,
+     "Hızlanma": 5.8,
+     "Konsantrasyon": 5.0,
+     "Çeviklik": 5.0,
+     "Denge": 5.0,
+     "İlk Kontrol": 5.0,
+     "Hız": 4.6,
+     "Güç": 3.3,
+     "Dayanıklılık": 3.3,
+     "Orta Yapma": 3.3,
+     "Karar Alma": 3.1,
+     "Soğukkanlılık": 3.1,
+     "FC_Top Kesmeler": 2.9,
+     "FC_Uzun Adım": 2.8,
+     "Zıplama": 2.4,
+     "Vizyon": 2.4,
+     "Dripling": 2.4,
+     "Agresiflik": 1.7,
+     "Cesaret": 1.7,
+     "Kafa Vuruşu": 1.7,
+     "Çalışkanlık": 1.7,
+     "İşbirliği": 1.6,
+     "Vücut Zindeliği": 0.8
+    },
+    "SV": {
+     "Mevki Alma": 8.4,
+     "Top Kapma": 8.4,
+     "Pas": 4.2,
+     "Markaj": 7.38,
+     "Önsezi": 7.38,
+     "Hızlanma": 5.27,
+     "Konsantrasyon": 6.36,
+     "Çeviklik": 4.54,
+     "Denge": 4.54,
+     "İlk Kontrol": 4.54,
+     "Hız": 4.18,
+     "Güç": 3.0,
+     "Dayanıklılık": 3.0,
+     "Orta Yapma": 2.1,
+     "Karar Alma": 2.82,
+     "Soğukkanlılık": 2.82,
+     "FC_Top Kesmeler": 3.69,
+     "FC_Uzun Adım": 2.54,
+     "Zıplama": 2.18,
+     "Vizyon": 1.53,
+     "Dripling": 1.53,
+     "Agresiflik": 2.16,
+     "Cesaret": 2.16,
+     "Kafa Vuruşu": 1.55,
+     "Çalışkanlık": 1.55,
+     "İşbirliği": 1.45,
+     "Vücut Zindeliği": 0.73
+    }
+   }
+  },
+  "CB_CAK": {
+   "pozisyon": "CB",
+   "kod": "CAK",
+   "ad": "Çakılı Stoper",
+   "agirliklar": {
+    "Markaj": {
+     "w": 13.3,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 12.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 12.5,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Mevki Alma": {
+     "w": 11.1,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 9.6,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Güç": {
+     "w": 9.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 8.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 8.2,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Vücut Zindeliği": {
+     "w": 4.2,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Kararlılık": {
+     "w": 3.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Bitiricilik": {
+     "w": 2.7,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 1.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 1.0,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Markaj": 11.22,
+     "Kafa Vuruşu": 15.06,
+     "Top Kapma": 10.54,
+     "Mevki Alma": 9.36,
+     "Konsantrasyon": 8.1,
+     "Güç": 10.84,
+     "Zıplama": 10.48,
+     "Cesaret": 6.92,
+     "Vücut Zindeliği": 5.06,
+     "Kararlılık": 3.98,
+     "Bitiricilik": 3.25,
+     "FC_Top Kesmeler": 1.69,
+     "Hız": 2.29,
+     "Denge": 1.2
+    },
+    "DG": {
+     "Markaj": 13.3,
+     "Kafa Vuruşu": 12.5,
+     "Top Kapma": 12.5,
+     "Mevki Alma": 11.1,
+     "Konsantrasyon": 9.6,
+     "Güç": 9.0,
+     "Zıplama": 8.7,
+     "Cesaret": 8.2,
+     "Vücut Zindeliği": 4.2,
+     "Kararlılık": 3.3,
+     "Bitiricilik": 2.7,
+     "FC_Top Kesmeler": 2.0,
+     "Hız": 1.9,
+     "Denge": 1.0
+    },
+    "SV": {
+     "Markaj": 15.18,
+     "Kafa Vuruşu": 10.19,
+     "Top Kapma": 14.26,
+     "Mevki Alma": 12.67,
+     "Konsantrasyon": 10.96,
+     "Güç": 7.34,
+     "Zıplama": 7.09,
+     "Cesaret": 9.36,
+     "Vücut Zindeliği": 3.42,
+     "Kararlılık": 2.69,
+     "Bitiricilik": 2.2,
+     "FC_Top Kesmeler": 2.28,
+     "Hız": 1.55,
+     "Denge": 0.82
+    }
+   },
+   "kimlik_kilidi": [
+    "HUC"
+   ]
+  },
+  "FB_KL_FB": {
+   "pozisyon": "FB",
+   "kod": "KL_FB",
+   "ad": "Klasik Bek",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 8.6,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 8.6,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 7.7,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Markaj": {
+     "w": 7.7,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Çalışkanlık": {
+     "w": 6.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 6.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 5.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 5.8,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 4.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 4.8,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Pas": {
+     "w": 4.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İşbirliği": {
+     "w": 3.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Kararlılık": {
+     "w": 3.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 3.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 2.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.8,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 2.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 2.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "FC_Uzun Adım": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 6.61,
+     "Top Kapma": 6.61,
+     "Konsantrasyon": 5.92,
+     "Markaj": 5.92,
+     "Çalışkanlık": 7.47,
+     "Orta Yapma": 10.45,
+     "Karar Alma": 6.37,
+     "Önsezi": 4.46,
+     "Kafa Vuruşu": 5.27,
+     "Cesaret": 3.69,
+     "Pas": 7.38,
+     "İşbirliği": 4.17,
+     "Kararlılık": 4.17,
+     "İlk Kontrol": 4.17,
+     "Soğukkanlılık": 3.07,
+     "Hızlanma": 3.07,
+     "Denge": 3.07,
+     "Dayanıklılık": 2.2,
+     "Güç": 2.2,
+     "FC_Uzun Adım": 2.2,
+     "FC_Top Kesmeler": 1.54
+    },
+    "DG": {
+     "Mevki Alma": 8.6,
+     "Top Kapma": 8.6,
+     "Konsantrasyon": 7.7,
+     "Markaj": 7.7,
+     "Çalışkanlık": 6.8,
+     "Orta Yapma": 6.8,
+     "Karar Alma": 5.8,
+     "Önsezi": 5.8,
+     "Kafa Vuruşu": 4.8,
+     "Cesaret": 4.8,
+     "Pas": 4.8,
+     "İşbirliği": 3.8,
+     "Kararlılık": 3.8,
+     "İlk Kontrol": 3.8,
+     "Soğukkanlılık": 2.8,
+     "Hızlanma": 2.8,
+     "Denge": 2.8,
+     "Dayanıklılık": 2.0,
+     "Güç": 2.0,
+     "FC_Uzun Adım": 2.0,
+     "FC_Top Kesmeler": 2.0
+    },
+    "SV": {
+     "Mevki Alma": 10.51,
+     "Top Kapma": 10.51,
+     "Konsantrasyon": 9.41,
+     "Markaj": 9.41,
+     "Çalışkanlık": 5.93,
+     "Orta Yapma": 4.15,
+     "Karar Alma": 5.06,
+     "Önsezi": 7.09,
+     "Kafa Vuruşu": 4.19,
+     "Cesaret": 5.86,
+     "Pas": 2.93,
+     "İşbirliği": 3.32,
+     "Kararlılık": 3.32,
+     "İlk Kontrol": 3.32,
+     "Soğukkanlılık": 2.44,
+     "Hızlanma": 2.44,
+     "Denge": 2.44,
+     "Dayanıklılık": 1.75,
+     "Güç": 1.75,
+     "FC_Uzun Adım": 1.75,
+     "FC_Top Kesmeler": 2.44
+    }
+   }
+  },
+  "FB_STOP": {
+   "pozisyon": "FB",
+   "kod": "STOP",
+   "ad": "Stoperleşen Bek",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 9.6,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Markaj": {
+     "w": 8.7,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 8.7,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 7.5,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 6.6,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Agresiflik": {
+     "w": 6.0,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 5.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 5.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 5.1,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 4.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 4.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 4.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 3.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 3.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.7,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 2.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 2.2,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Pas": {
+     "w": 1.9,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Orta Yapma": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 7.88,
+     "Markaj": 7.14,
+     "Top Kapma": 7.14,
+     "Konsantrasyon": 6.15,
+     "Önsezi": 5.42,
+     "Agresiflik": 4.92,
+     "Kafa Vuruşu": 6.8,
+     "Güç": 6.45,
+     "Cesaret": 4.19,
+     "Karar Alma": 5.63,
+     "Çalışkanlık": 5.16,
+     "Zıplama": 5.04,
+     "Soğukkanlılık": 4.45,
+     "Hız": 3.87,
+     "Hızlanma": 3.28,
+     "Denge": 3.17,
+     "Dayanıklılık": 2.7,
+     "İşbirliği": 2.58,
+     "FC_Top Kesmeler": 1.64,
+     "Pas": 3.12,
+     "Dripling": 1.64,
+     "Orta Yapma": 1.64
+    },
+    "DG": {
+     "Mevki Alma": 9.6,
+     "Markaj": 8.7,
+     "Top Kapma": 8.7,
+     "Konsantrasyon": 7.5,
+     "Önsezi": 6.6,
+     "Agresiflik": 6.0,
+     "Kafa Vuruşu": 5.8,
+     "Güç": 5.5,
+     "Cesaret": 5.1,
+     "Karar Alma": 4.8,
+     "Çalışkanlık": 4.4,
+     "Zıplama": 4.3,
+     "Soğukkanlılık": 3.8,
+     "Hız": 3.3,
+     "Hızlanma": 2.8,
+     "Denge": 2.7,
+     "Dayanıklılık": 2.3,
+     "İşbirliği": 2.2,
+     "FC_Top Kesmeler": 2.0,
+     "Pas": 1.9,
+     "Dripling": 1.0,
+     "Orta Yapma": 1.0
+    },
+    "SV": {
+     "Mevki Alma": 11.15,
+     "Markaj": 10.11,
+     "Top Kapma": 10.11,
+     "Konsantrasyon": 8.71,
+     "Önsezi": 7.67,
+     "Agresiflik": 6.97,
+     "Kafa Vuruşu": 4.81,
+     "Güç": 4.56,
+     "Cesaret": 5.92,
+     "Karar Alma": 3.98,
+     "Çalışkanlık": 3.65,
+     "Zıplama": 3.57,
+     "Soğukkanlılık": 3.15,
+     "Hız": 2.74,
+     "Hızlanma": 2.32,
+     "Denge": 2.24,
+     "Dayanıklılık": 1.91,
+     "İşbirliği": 1.83,
+     "FC_Top Kesmeler": 2.32,
+     "Pas": 1.1,
+     "Dripling": 0.58,
+     "Orta Yapma": 0.58
+    }
+   }
+  },
+  "FB_WB": {
+   "pozisyon": "FB",
+   "kod": "WB",
+   "ad": "Kanat Bek",
+   "agirliklar": {
+    "Hızlanma": {
+     "w": 10.68,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 9.98,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 8.68,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Orta Yapma": {
+     "w": 8.68,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hız": {
+     "w": 6.79,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 6.09,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 5.99,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 5.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 5.79,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 5.69,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 4.59,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 3.69,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Denge": {
+     "w": 3.19,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 2.89,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Teknik": {
+     "w": 2.89,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 2.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 2.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Uzun Adım": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 1.5,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Hızlanma": 9.89,
+     "Dayanıklılık": 9.24,
+     "Topsuz Alan": 11.25,
+     "Orta Yapma": 11.25,
+     "Hız": 6.28,
+     "Çalışkanlık": 5.64,
+     "Dripling": 7.76,
+     "Karar Alma": 5.36,
+     "İlk Kontrol": 5.36,
+     "Çeviklik": 5.27,
+     "Konsantrasyon": 2.98,
+     "Top Kapma": 2.39,
+     "Denge": 2.96,
+     "Pas": 3.75,
+     "Teknik": 2.68,
+     "Soğukkanlılık": 2.59,
+     "Vücut Zindeliği": 2.13,
+     "FC_Uzun Adım": 1.85,
+     "İşbirliği": 1.39
+    },
+    "DG": {
+     "Hızlanma": 10.68,
+     "Dayanıklılık": 9.98,
+     "Topsuz Alan": 8.68,
+     "Orta Yapma": 8.68,
+     "Hız": 6.79,
+     "Çalışkanlık": 6.09,
+     "Dripling": 5.99,
+     "Karar Alma": 5.79,
+     "İlk Kontrol": 5.79,
+     "Çeviklik": 5.69,
+     "Konsantrasyon": 4.59,
+     "Top Kapma": 3.69,
+     "Denge": 3.19,
+     "Pas": 2.89,
+     "Teknik": 2.89,
+     "Soğukkanlılık": 2.79,
+     "Vücut Zindeliği": 2.3,
+     "FC_Uzun Adım": 2.0,
+     "İşbirliği": 1.5
+    },
+    "SV": {
+     "Hızlanma": 11.19,
+     "Dayanıklılık": 10.46,
+     "Topsuz Alan": 6.37,
+     "Orta Yapma": 6.37,
+     "Hız": 7.11,
+     "Çalışkanlık": 6.38,
+     "Dripling": 4.39,
+     "Karar Alma": 6.07,
+     "İlk Kontrol": 6.07,
+     "Çeviklik": 5.96,
+     "Konsantrasyon": 6.73,
+     "Top Kapma": 5.42,
+     "Denge": 3.35,
+     "Pas": 2.12,
+     "Teknik": 3.03,
+     "Soğukkanlılık": 2.93,
+     "Vücut Zindeliği": 2.41,
+     "FC_Uzun Adım": 2.09,
+     "İşbirliği": 1.57
+    }
+   }
+  },
+  "FB_IWB": {
+   "pozisyon": "FB",
+   "kod": "IWB",
+   "ad": "İçe Kat Eden Bek",
+   "agirliklar": {
+    "Pas": {
+     "w": 8.91,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 8.61,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 8.01,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Mevki Alma": {
+     "w": 7.51,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Vizyon": {
+     "w": 7.21,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 5.71,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 5.71,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 5.71,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Markaj": {
+     "w": 4.5,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Çalışkanlık": {
+     "w": 4.1,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 4.0,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 3.8,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 3.1,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 3.1,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 2.8,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 1.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Özel Yetenek": {
+     "w": 1.9,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "İşbirliği": {
+     "w": 1.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 1.1,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dayanıklılık": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Pas": 12.35,
+     "Karar Alma": 8.53,
+     "İlk Kontrol": 7.93,
+     "Mevki Alma": 5.21,
+     "Vizyon": 10.0,
+     "Önsezi": 3.96,
+     "Konsantrasyon": 3.96,
+     "Top Kapma": 3.96,
+     "Soğukkanlılık": 4.66,
+     "Markaj": 3.12,
+     "Çalışkanlık": 4.07,
+     "Teknik": 3.97,
+     "Uzaktan Şut": 5.28,
+     "Denge": 3.07,
+     "Çeviklik": 3.07,
+     "Hızlanma": 2.78,
+     "FC_Zayıf Ayak": 3.89,
+     "FC_Top Kesmeler": 1.39,
+     "Hız": 1.88,
+     "Özel Yetenek": 2.64,
+     "İşbirliği": 1.78,
+     "Dripling": 1.53,
+     "Dayanıklılık": 0.99
+    },
+    "DG": {
+     "Pas": 8.91,
+     "Karar Alma": 8.61,
+     "İlk Kontrol": 8.01,
+     "Mevki Alma": 7.51,
+     "Vizyon": 7.21,
+     "Önsezi": 5.71,
+     "Konsantrasyon": 5.71,
+     "Top Kapma": 5.71,
+     "Soğukkanlılık": 4.7,
+     "Markaj": 4.5,
+     "Çalışkanlık": 4.1,
+     "Teknik": 4.0,
+     "Uzaktan Şut": 3.8,
+     "Denge": 3.1,
+     "Çeviklik": 3.1,
+     "Hızlanma": 2.8,
+     "FC_Zayıf Ayak": 2.8,
+     "FC_Top Kesmeler": 2.0,
+     "Hız": 1.9,
+     "Özel Yetenek": 1.9,
+     "İşbirliği": 1.8,
+     "Dripling": 1.1,
+     "Dayanıklılık": 1.0
+    },
+    "SV": {
+     "Pas": 5.95,
+     "Karar Alma": 8.22,
+     "İlk Kontrol": 7.65,
+     "Mevki Alma": 10.04,
+     "Vizyon": 4.82,
+     "Önsezi": 7.63,
+     "Konsantrasyon": 7.63,
+     "Top Kapma": 7.63,
+     "Soğukkanlılık": 4.49,
+     "Markaj": 6.02,
+     "Çalışkanlık": 3.92,
+     "Teknik": 3.82,
+     "Uzaktan Şut": 2.54,
+     "Denge": 2.96,
+     "Çeviklik": 2.96,
+     "Hızlanma": 2.68,
+     "FC_Zayıf Ayak": 1.87,
+     "FC_Top Kesmeler": 2.68,
+     "Hız": 1.82,
+     "Özel Yetenek": 1.27,
+     "İşbirliği": 1.72,
+     "Dripling": 0.74,
+     "Dayanıklılık": 0.96
+    }
+   }
+  },
+  "DM_DM_KL": {
+   "pozisyon": "DM",
+   "kod": "DM_KL",
+   "ad": "Defansif Orta Saha",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 9.68,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 9.58,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 8.38,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 7.49,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 7.39,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Güç": {
+     "w": 7.29,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Markaj": {
+     "w": 6.79,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Pas": {
+     "w": 6.59,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Çalışkanlık": {
+     "w": 5.09,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 4.59,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 3.99,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 3.69,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 3.69,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 3.49,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 2.99,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 2.99,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.89,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Bitiricilik": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Vizyon": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 7.56,
+     "Top Kapma": 7.48,
+     "Karar Alma": 9.35,
+     "Önsezi": 5.84,
+     "Konsantrasyon": 5.77,
+     "Güç": 8.13,
+     "Markaj": 5.3,
+     "Pas": 10.29,
+     "Çalışkanlık": 5.68,
+     "Dayanıklılık": 5.12,
+     "Agresiflik": 3.12,
+     "Soğukkanlılık": 4.12,
+     "İlk Kontrol": 4.12,
+     "Hızlanma": 3.9,
+     "İşbirliği": 3.34,
+     "Vücut Zindeliği": 3.34,
+     "FC_Top Kesmeler": 2.26,
+     "Bitiricilik": 3.74,
+     "Vizyon": 1.56
+    },
+    "DG": {
+     "Mevki Alma": 9.68,
+     "Top Kapma": 9.58,
+     "Karar Alma": 8.38,
+     "Önsezi": 7.49,
+     "Konsantrasyon": 7.39,
+     "Güç": 7.29,
+     "Markaj": 6.79,
+     "Pas": 6.59,
+     "Çalışkanlık": 5.09,
+     "Dayanıklılık": 4.59,
+     "Agresiflik": 3.99,
+     "Soğukkanlılık": 3.69,
+     "İlk Kontrol": 3.69,
+     "Hızlanma": 3.49,
+     "İşbirliği": 2.99,
+     "Vücut Zindeliği": 2.99,
+     "FC_Top Kesmeler": 2.89,
+     "Bitiricilik": 2.4,
+     "Vizyon": 1.0
+    },
+    "SV": {
+     "Mevki Alma": 11.67,
+     "Top Kapma": 11.55,
+     "Karar Alma": 7.22,
+     "Önsezi": 9.02,
+     "Konsantrasyon": 8.9,
+     "Güç": 6.27,
+     "Markaj": 8.18,
+     "Pas": 3.97,
+     "Çalışkanlık": 4.38,
+     "Dayanıklılık": 3.95,
+     "Agresiflik": 4.81,
+     "Soğukkanlılık": 3.18,
+     "İlk Kontrol": 3.18,
+     "Hızlanma": 3.01,
+     "İşbirliği": 2.58,
+     "Vücut Zindeliği": 2.58,
+     "FC_Top Kesmeler": 3.49,
+     "Bitiricilik": 1.44,
+     "Vizyon": 0.6
+    }
+   }
+  },
+  "DM_DLP": {
+   "pozisyon": "DM",
+   "kod": "DLP",
+   "ad": "Derin Oyun Kurucu",
+   "agirliklar": {
+    "Pas": {
+     "w": 11.78,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Vizyon": {
+     "w": 11.08,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 9.98,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 9.28,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 8.78,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 8.68,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 7.68,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 7.49,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "İşbirliği": {
+     "w": 4.99,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 3.29,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Çeviklik": {
+     "w": 2.69,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 2.69,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Özel Yetenek": {
+     "w": 2.69,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Konsantrasyon": {
+     "w": 2.59,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 2.1,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 1.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "FC_Şut Gücü": {
+     "w": 1.5,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Dayanıklılık": {
+     "w": 0.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Pas": 15.18,
+     "Vizyon": 14.28,
+     "Karar Alma": 9.19,
+     "İlk Kontrol": 8.55,
+     "Denge": 8.09,
+     "Soğukkanlılık": 7.99,
+     "Teknik": 7.08,
+     "Önsezi": 4.82,
+     "İşbirliği": 4.59,
+     "Top Kapma": 2.12,
+     "Çeviklik": 2.48,
+     "Orta Yapma": 3.47,
+     "Özel Yetenek": 3.47,
+     "Konsantrasyon": 1.67,
+     "Hızlanma": 1.93,
+     "Dripling": 2.32,
+     "FC_Şut Gücü": 1.93,
+     "Dayanıklılık": 0.83
+    },
+    "DG": {
+     "Pas": 11.78,
+     "Vizyon": 11.08,
+     "Karar Alma": 9.98,
+     "İlk Kontrol": 9.28,
+     "Denge": 8.78,
+     "Soğukkanlılık": 8.68,
+     "Teknik": 7.68,
+     "Önsezi": 7.49,
+     "İşbirliği": 4.99,
+     "Top Kapma": 3.29,
+     "Çeviklik": 2.69,
+     "Orta Yapma": 2.69,
+     "Özel Yetenek": 2.69,
+     "Konsantrasyon": 2.59,
+     "Hızlanma": 2.1,
+     "Dripling": 1.8,
+     "FC_Şut Gücü": 1.5,
+     "Dayanıklılık": 0.9
+    },
+    "SV": {
+     "Pas": 8.6,
+     "Vizyon": 8.09,
+     "Karar Alma": 10.41,
+     "İlk Kontrol": 9.68,
+     "Denge": 9.16,
+     "Soğukkanlılık": 9.05,
+     "Teknik": 8.01,
+     "Önsezi": 10.93,
+     "İşbirliği": 5.2,
+     "Top Kapma": 4.81,
+     "Çeviklik": 2.81,
+     "Orta Yapma": 1.97,
+     "Özel Yetenek": 1.97,
+     "Konsantrasyon": 3.79,
+     "Hızlanma": 2.19,
+     "Dripling": 1.31,
+     "FC_Şut Gücü": 1.09,
+     "Dayanıklılık": 0.94
+    }
+   }
+  },
+  "DM_ANCHOR": {
+   "pozisyon": "DM",
+   "kod": "ANCHOR",
+   "ad": "Alan Kaplayan OS",
+   "agirliklar": {
+    "Mevki Alma": {
+     "w": 10.1,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Güç": {
+     "w": 9.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 9.1,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 8.0,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 7.3,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Markaj": {
+     "w": 6.3,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 6.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Kafa Vuruşu": {
+     "w": 4.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 4.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 4.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 4.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dayanıklılık": {
+     "w": 4.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 3.8,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Çalışkanlık": {
+     "w": 3.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 3.6,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Cesaret": {
+     "w": 2.8,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "İşbirliği": {
+     "w": 1.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 1.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Mevki Alma": 8.33,
+     "Güç": 11.07,
+     "Top Kapma": 7.5,
+     "Önsezi": 6.6,
+     "Konsantrasyon": 6.02,
+     "Markaj": 5.19,
+     "Karar Alma": 7.42,
+     "Kafa Vuruşu": 5.54,
+     "Zıplama": 5.54,
+     "Soğukkanlılık": 5.18,
+     "Pas": 5.18,
+     "Dayanıklılık": 5.06,
+     "Agresiflik": 3.13,
+     "Çalışkanlık": 4.24,
+     "İlk Kontrol": 4.24,
+     "FC_Top Kesmeler": 2.39,
+     "Cesaret": 2.31,
+     "İşbirliği": 2.0,
+     "Vücut Zindeliği": 1.88,
+     "Hızlanma": 1.18
+    },
+    "DG": {
+     "Mevki Alma": 10.1,
+     "Güç": 9.4,
+     "Top Kapma": 9.1,
+     "Önsezi": 8.0,
+     "Konsantrasyon": 7.3,
+     "Markaj": 6.3,
+     "Karar Alma": 6.3,
+     "Kafa Vuruşu": 4.7,
+     "Zıplama": 4.7,
+     "Soğukkanlılık": 4.4,
+     "Pas": 4.4,
+     "Dayanıklılık": 4.3,
+     "Agresiflik": 3.8,
+     "Çalışkanlık": 3.6,
+     "İlk Kontrol": 3.6,
+     "FC_Top Kesmeler": 2.9,
+     "Cesaret": 2.8,
+     "İşbirliği": 1.7,
+     "Vücut Zindeliği": 1.6,
+     "Hızlanma": 1.0
+    },
+    "SV": {
+     "Mevki Alma": 11.77,
+     "Güç": 7.83,
+     "Top Kapma": 10.61,
+     "Önsezi": 9.32,
+     "Konsantrasyon": 8.51,
+     "Markaj": 7.34,
+     "Karar Alma": 5.24,
+     "Kafa Vuruşu": 3.91,
+     "Zıplama": 3.91,
+     "Soğukkanlılık": 3.66,
+     "Pas": 3.66,
+     "Dayanıklılık": 3.58,
+     "Agresiflik": 4.43,
+     "Çalışkanlık": 3.0,
+     "İlk Kontrol": 3.0,
+     "FC_Top Kesmeler": 3.38,
+     "Cesaret": 3.26,
+     "İşbirliği": 1.42,
+     "Vücut Zindeliği": 1.33,
+     "Hızlanma": 0.83
+    }
+   },
+   "kimlik_kilidi": [
+    "HUC"
+   ]
+  },
+  "DM_DIN": {
+   "pozisyon": "DM",
+   "kod": "DIN",
+   "ad": "Dinamik Oyun Kurucu",
+   "agirliklar": {
+    "Dayanıklılık": {
+     "w": 8.39,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 7.39,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 6.59,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 6.59,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 6.39,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Vizyon": {
+     "w": 5.89,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Çeviklik": {
+     "w": 5.89,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 5.89,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 5.69,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Teknik": {
+     "w": 5.09,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 5.09,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 5.09,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 5.09,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 4.2,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 4.1,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Çalışkanlık": {
+     "w": 3.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 3.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Kararlılık": {
+     "w": 2.5,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Vücut Zindeliği": {
+     "w": 1.5,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Dayanıklılık": 7.92,
+     "Pas": 9.76,
+     "İlk Kontrol": 6.22,
+     "Karar Alma": 6.22,
+     "Topsuz Alan": 8.44,
+     "Vizyon": 7.78,
+     "Çeviklik": 5.56,
+     "Top Kapma": 3.89,
+     "Önsezi": 3.76,
+     "Teknik": 4.81,
+     "Soğukkanlılık": 4.81,
+     "Denge": 4.81,
+     "Dripling": 6.73,
+     "Hızlanma": 3.96,
+     "Konsantrasyon": 2.7,
+     "Çalışkanlık": 3.11,
+     "İşbirliği": 3.11,
+     "Kararlılık": 2.36,
+     "FC_Şut Gücü": 2.64,
+     "Vücut Zindeliği": 1.41
+    },
+    "DG": {
+     "Dayanıklılık": 8.39,
+     "Pas": 7.39,
+     "İlk Kontrol": 6.59,
+     "Karar Alma": 6.59,
+     "Topsuz Alan": 6.39,
+     "Vizyon": 5.89,
+     "Çeviklik": 5.89,
+     "Top Kapma": 5.89,
+     "Önsezi": 5.69,
+     "Teknik": 5.09,
+     "Soğukkanlılık": 5.09,
+     "Denge": 5.09,
+     "Dripling": 5.09,
+     "Hızlanma": 4.2,
+     "Konsantrasyon": 4.1,
+     "Çalışkanlık": 3.3,
+     "İşbirliği": 3.3,
+     "Kararlılık": 2.5,
+     "FC_Şut Gücü": 2.0,
+     "Vücut Zindeliği": 1.5
+    },
+    "SV": {
+     "Dayanıklılık": 8.54,
+     "Pas": 5.27,
+     "İlk Kontrol": 6.71,
+     "Karar Alma": 6.71,
+     "Topsuz Alan": 4.56,
+     "Vizyon": 4.2,
+     "Çeviklik": 6.0,
+     "Top Kapma": 8.4,
+     "Önsezi": 8.11,
+     "Teknik": 5.19,
+     "Soğukkanlılık": 5.19,
+     "Denge": 5.19,
+     "Dripling": 3.63,
+     "Hızlanma": 4.27,
+     "Konsantrasyon": 5.84,
+     "Çalışkanlık": 3.36,
+     "İşbirliği": 3.36,
+     "Kararlılık": 2.54,
+     "FC_Şut Gücü": 1.42,
+     "Vücut Zindeliği": 1.53
+    }
+   }
+  },
+  "DM_SAVAS": {
+   "pozisyon": "DM",
+   "kod": "SAVAS",
+   "ad": "Savaşçı Orta Saha",
+   "agirliklar": {
+    "Top Kapma": {
+     "w": 9.3,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 9.1,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 8.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 8.2,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 7.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 6.4,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Mevki Alma": {
+     "w": 5.9,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 5.8,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 5.0,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 4.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 4.3,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 4.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 4.2,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Denge": {
+     "w": 3.7,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Markaj": {
+     "w": 3.4,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.8,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 2.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 1.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Top Kapma": 7.21,
+     "Hızlanma": 10.07,
+     "Dayanıklılık": 9.41,
+     "Çalışkanlık": 9.08,
+     "Çeviklik": 8.19,
+     "Agresiflik": 4.96,
+     "Mevki Alma": 4.57,
+     "Önsezi": 4.49,
+     "Karar Alma": 5.53,
+     "Hız": 5.2,
+     "Pas": 6.66,
+     "İlk Kontrol": 4.76,
+     "Konsantrasyon": 3.25,
+     "Denge": 4.1,
+     "Markaj": 2.63,
+     "FC_Top Kesmeler": 2.25,
+     "FC_Patlayıcılık": 3.1,
+     "Soğukkanlılık": 2.66,
+     "Güç": 1.88
+    },
+    "DG": {
+     "Top Kapma": 9.3,
+     "Hızlanma": 9.1,
+     "Dayanıklılık": 8.5,
+     "Çalışkanlık": 8.2,
+     "Çeviklik": 7.4,
+     "Agresiflik": 6.4,
+     "Mevki Alma": 5.9,
+     "Önsezi": 5.8,
+     "Karar Alma": 5.0,
+     "Hız": 4.7,
+     "Pas": 4.3,
+     "İlk Kontrol": 4.3,
+     "Konsantrasyon": 4.2,
+     "Denge": 3.7,
+     "Markaj": 3.4,
+     "FC_Top Kesmeler": 2.9,
+     "FC_Patlayıcılık": 2.8,
+     "Soğukkanlılık": 2.4,
+     "Güç": 1.7
+    },
+    "SV": {
+     "Top Kapma": 11.43,
+     "Hızlanma": 7.99,
+     "Dayanıklılık": 7.46,
+     "Çalışkanlık": 7.2,
+     "Çeviklik": 6.5,
+     "Agresiflik": 7.87,
+     "Mevki Alma": 7.25,
+     "Önsezi": 7.13,
+     "Karar Alma": 4.39,
+     "Hız": 4.13,
+     "Pas": 2.64,
+     "İlk Kontrol": 3.78,
+     "Konsantrasyon": 5.16,
+     "Denge": 3.25,
+     "Markaj": 4.18,
+     "FC_Top Kesmeler": 3.57,
+     "FC_Patlayıcılık": 2.46,
+     "Soğukkanlılık": 2.11,
+     "Güç": 1.49
+    }
+   }
+  },
+  "CM_CM_KL": {
+   "pozisyon": "CM",
+   "kod": "CM_KL",
+   "ad": "Merkez Orta Saha",
+   "agirliklar": {
+    "Karar Alma": {
+     "w": 10.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 9.5,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 9.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 8.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 7.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 7.3,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Mevki Alma": {
+     "w": 7.0,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 6.8,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 5.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 5.7,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 5.6,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Teknik": {
+     "w": 3.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 3.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 2.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.5,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 1.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Karar Alma": 10.77,
+     "Pas": 13.9,
+     "İlk Kontrol": 9.83,
+     "Dayanıklılık": 8.88,
+     "İşbirliği": 8.15,
+     "Çalışkanlık": 7.63,
+     "Mevki Alma": 5.12,
+     "Top Kapma": 4.98,
+     "Soğukkanlılık": 5.96,
+     "Önsezi": 4.17,
+     "Konsantrasyon": 4.1,
+     "Teknik": 3.87,
+     "Vücut Zindeliği": 3.76,
+     "Güç": 2.93,
+     "Denge": 2.61,
+     "FC_Top Kesmeler": 1.46,
+     "Hızlanma": 1.88
+    },
+    "DG": {
+     "Karar Alma": 10.3,
+     "Pas": 9.5,
+     "İlk Kontrol": 9.4,
+     "Dayanıklılık": 8.5,
+     "İşbirliği": 7.8,
+     "Çalışkanlık": 7.3,
+     "Mevki Alma": 7.0,
+     "Top Kapma": 6.8,
+     "Soğukkanlılık": 5.7,
+     "Önsezi": 5.7,
+     "Konsantrasyon": 5.6,
+     "Teknik": 3.7,
+     "Vücut Zindeliği": 3.6,
+     "Güç": 2.8,
+     "Denge": 2.5,
+     "FC_Top Kesmeler": 2.0,
+     "Hızlanma": 1.8
+    },
+    "SV": {
+     "Karar Alma": 9.54,
+     "Pas": 6.16,
+     "İlk Kontrol": 8.7,
+     "Dayanıklılık": 7.87,
+     "İşbirliği": 7.22,
+     "Çalışkanlık": 6.76,
+     "Mevki Alma": 9.07,
+     "Top Kapma": 8.82,
+     "Soğukkanlılık": 5.28,
+     "Önsezi": 7.39,
+     "Konsantrasyon": 7.26,
+     "Teknik": 3.43,
+     "Vücut Zindeliği": 3.33,
+     "Güç": 2.59,
+     "Denge": 2.32,
+     "FC_Top Kesmeler": 2.59,
+     "Hızlanma": 1.67
+    }
+   }
+  },
+  "CM_B2B": {
+   "pozisyon": "CM",
+   "kod": "B2B",
+   "ad": "Box-to-Box",
+   "agirliklar": {
+    "Çalışkanlık": {
+     "w": 7.92,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 7.92,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 6.81,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Topsuz Alan": {
+     "w": 6.51,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 5.81,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 5.31,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 5.21,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 5.21,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 4.91,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 4.31,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Markaj": {
+     "w": 4.21,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Önsezi": {
+     "w": 4.11,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Konsantrasyon": {
+     "w": 3.41,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "İşbirliği": {
+     "w": 3.41,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 3.41,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 3.41,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Teknik": {
+     "w": 3.31,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 3.21,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 3.01,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.81,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Uzun Adım": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Vücut Zindeliği": {
+     "w": 1.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Çalışkanlık": 8.15,
+     "Dayanıklılık": 8.15,
+     "Top Kapma": 4.91,
+     "Topsuz Alan": 9.39,
+     "Karar Alma": 5.98,
+     "Hızlanma": 5.47,
+     "Güç": 5.36,
+     "Hız": 5.36,
+     "İlk Kontrol": 5.05,
+     "Pas": 6.21,
+     "Markaj": 3.03,
+     "Önsezi": 2.96,
+     "Konsantrasyon": 2.45,
+     "İşbirliği": 3.51,
+     "Zıplama": 3.51,
+     "Agresiflik": 2.45,
+     "Teknik": 3.4,
+     "Soğukkanlılık": 3.3,
+     "Çeviklik": 3.09,
+     "Denge": 2.89,
+     "FC_Uzun Adım": 2.06,
+     "FC_Top Kesmeler": 1.44,
+     "Vücut Zindeliği": 1.86
+    },
+    "DG": {
+     "Çalışkanlık": 7.92,
+     "Dayanıklılık": 7.92,
+     "Top Kapma": 6.81,
+     "Topsuz Alan": 6.51,
+     "Karar Alma": 5.81,
+     "Hızlanma": 5.31,
+     "Güç": 5.21,
+     "Hız": 5.21,
+     "İlk Kontrol": 4.91,
+     "Pas": 4.31,
+     "Markaj": 4.21,
+     "Önsezi": 4.11,
+     "Konsantrasyon": 3.41,
+     "İşbirliği": 3.41,
+     "Zıplama": 3.41,
+     "Agresiflik": 3.41,
+     "Teknik": 3.31,
+     "Soğukkanlılık": 3.21,
+     "Çeviklik": 3.01,
+     "Denge": 2.81,
+     "FC_Uzun Adım": 2.0,
+     "FC_Top Kesmeler": 2.0,
+     "Vücut Zindeliği": 1.8
+    },
+    "SV": {
+     "Çalışkanlık": 7.44,
+     "Dayanıklılık": 7.44,
+     "Top Kapma": 8.97,
+     "Topsuz Alan": 4.29,
+     "Karar Alma": 5.47,
+     "Hızlanma": 4.99,
+     "Güç": 4.9,
+     "Hız": 4.9,
+     "İlk Kontrol": 4.62,
+     "Pas": 2.84,
+     "Markaj": 5.54,
+     "Önsezi": 5.41,
+     "Konsantrasyon": 4.49,
+     "İşbirliği": 3.2,
+     "Zıplama": 3.2,
+     "Agresiflik": 4.49,
+     "Teknik": 3.11,
+     "Soğukkanlılık": 3.02,
+     "Çeviklik": 2.83,
+     "Denge": 2.64,
+     "FC_Uzun Adım": 1.88,
+     "FC_Top Kesmeler": 2.64,
+     "Vücut Zindeliği": 1.7
+    }
+   }
+  },
+  "CM_MEZ": {
+   "pozisyon": "CM",
+   "kod": "MEZ",
+   "ad": "Mezzala",
+   "agirliklar": {
+    "Topsuz Alan": {
+     "w": 8.29,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 7.39,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Pas": {
+     "w": 7.39,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dayanıklılık": {
+     "w": 7.39,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 6.49,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 6.49,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 6.49,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 6.49,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Top Kapma": {
+     "w": 5.59,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Teknik": {
+     "w": 4.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 4.6,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Çalışkanlık": {
+     "w": 4.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 3.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 3.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 3.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Bitiricilik": {
+     "w": 2.7,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 2.7,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Denge": {
+     "w": 1.9,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 1.9,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "FC_Patlayıcılık": {
+     "w": 1.9,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Topsuz Alan": 10.33,
+     "Dripling": 9.21,
+     "Pas": 9.21,
+     "Dayanıklılık": 6.58,
+     "Hızlanma": 5.78,
+     "İlk Kontrol": 5.78,
+     "Karar Alma": 5.78,
+     "Vizyon": 8.09,
+     "Top Kapma": 3.48,
+     "Teknik": 4.09,
+     "Uzaktan Şut": 5.72,
+     "Çalışkanlık": 4.09,
+     "Çeviklik": 3.29,
+     "Soğukkanlılık": 3.29,
+     "İşbirliği": 3.29,
+     "Bitiricilik": 3.36,
+     "Önsezi": 1.68,
+     "FC_Top Kesmeler": 1.24,
+     "Denge": 1.69,
+     "FC_Şut Gücü": 2.36,
+     "FC_Patlayıcılık": 1.69
+    },
+    "DG": {
+     "Topsuz Alan": 8.29,
+     "Dripling": 7.39,
+     "Pas": 7.39,
+     "Dayanıklılık": 7.39,
+     "Hızlanma": 6.49,
+     "İlk Kontrol": 6.49,
+     "Karar Alma": 6.49,
+     "Vizyon": 6.49,
+     "Top Kapma": 5.59,
+     "Teknik": 4.6,
+     "Uzaktan Şut": 4.6,
+     "Çalışkanlık": 4.6,
+     "Çeviklik": 3.7,
+     "Soğukkanlılık": 3.7,
+     "İşbirliği": 3.7,
+     "Bitiricilik": 2.7,
+     "Önsezi": 2.7,
+     "FC_Top Kesmeler": 2.0,
+     "Denge": 1.9,
+     "FC_Şut Gücü": 1.9,
+     "FC_Patlayıcılık": 1.9
+    },
+    "SV": {
+     "Topsuz Alan": 6.28,
+     "Dripling": 5.6,
+     "Pas": 5.6,
+     "Dayanıklılık": 7.99,
+     "Hızlanma": 7.02,
+     "İlk Kontrol": 7.02,
+     "Karar Alma": 7.02,
+     "Vizyon": 4.91,
+     "Top Kapma": 8.47,
+     "Teknik": 4.97,
+     "Uzaktan Şut": 3.48,
+     "Çalışkanlık": 4.97,
+     "Çeviklik": 4.0,
+     "Soğukkanlılık": 4.0,
+     "İşbirliği": 4.0,
+     "Bitiricilik": 2.04,
+     "Önsezi": 4.08,
+     "FC_Top Kesmeler": 3.02,
+     "Denge": 2.05,
+     "FC_Şut Gücü": 1.44,
+     "FC_Patlayıcılık": 2.05
+    }
+   }
+  },
+  "AM_AM_KL": {
+   "pozisyon": "AM",
+   "kod": "AM_KL",
+   "ad": "Ofansif Orta Saha",
+   "agirliklar": {
+    "İlk Kontrol": {
+     "w": 10.01,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 9.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 9.01,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Pas": {
+     "w": 7.11,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 7.01,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Teknik": {
+     "w": 6.81,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 6.11,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Topsuz Alan": {
+     "w": 5.81,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Soğukkanlılık": {
+     "w": 5.61,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 5.51,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 4.7,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 4.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Özel Yetenek": {
+     "w": 3.0,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Bitiricilik": {
+     "w": 2.9,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Cesaret": {
+     "w": 2.9,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 2.6,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 1.9,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Çalışkanlık": {
+     "w": 1.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "İlk Kontrol": 8.73,
+     "Karar Alma": 8.47,
+     "Vizyon": 11.0,
+     "Pas": 8.68,
+     "Dripling": 8.55,
+     "Teknik": 5.94,
+     "Uzaktan Şut": 7.45,
+     "Topsuz Alan": 7.09,
+     "Soğukkanlılık": 4.89,
+     "Çeviklik": 4.8,
+     "Önsezi": 2.87,
+     "Hızlanma": 3.93,
+     "Özel Yetenek": 3.67,
+     "Bitiricilik": 3.54,
+     "Cesaret": 1.77,
+     "FC_Şut Gücü": 3.54,
+     "Denge": 2.27,
+     "Top Kapma": 1.16,
+     "Çalışkanlık": 1.66
+    },
+    "DG": {
+     "İlk Kontrol": 10.01,
+     "Karar Alma": 9.71,
+     "Vizyon": 9.01,
+     "Pas": 7.11,
+     "Dripling": 7.01,
+     "Teknik": 6.81,
+     "Uzaktan Şut": 6.11,
+     "Topsuz Alan": 5.81,
+     "Soğukkanlılık": 5.61,
+     "Çeviklik": 5.51,
+     "Önsezi": 4.7,
+     "Hızlanma": 4.5,
+     "Özel Yetenek": 3.0,
+     "Bitiricilik": 2.9,
+     "Cesaret": 2.9,
+     "FC_Şut Gücü": 2.9,
+     "Denge": 2.6,
+     "Top Kapma": 1.9,
+     "Çalışkanlık": 1.9
+    },
+    "SV": {
+     "İlk Kontrol": 11.04,
+     "Karar Alma": 10.71,
+     "Vizyon": 6.96,
+     "Pas": 5.49,
+     "Dripling": 5.41,
+     "Teknik": 7.51,
+     "Uzaktan Şut": 4.72,
+     "Topsuz Alan": 4.48,
+     "Soğukkanlılık": 6.18,
+     "Çeviklik": 6.07,
+     "Önsezi": 7.27,
+     "Hızlanma": 4.97,
+     "Özel Yetenek": 2.32,
+     "Bitiricilik": 2.24,
+     "Cesaret": 4.48,
+     "FC_Şut Gücü": 2.24,
+     "Denge": 2.87,
+     "Top Kapma": 2.94,
+     "Çalışkanlık": 2.1
+    }
+   }
+  },
+  "AM_AP": {
+   "pozisyon": "AM",
+   "kod": "AP",
+   "ad": "Ofansif Oyun Kurucu",
+   "agirliklar": {
+    "Vizyon": {
+     "w": 9.22,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Pas": {
+     "w": 9.12,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 7.21,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 7.11,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 6.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 4.91,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Soğukkanlılık": {
+     "w": 4.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 4.51,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Çalışkanlık": {
+     "w": 4.51,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 3.91,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Dripling": {
+     "w": 3.61,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Mevki Alma": {
+     "w": 3.61,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Top Kapma": {
+     "w": 3.61,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Bitiricilik": {
+     "w": 3.11,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Çeviklik": {
+     "w": 2.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 2.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 2.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 2.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 2.71,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 2.4,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Agresiflik": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Özel Yetenek": {
+     "w": 1.9,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Markaj": {
+     "w": 1.9,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Vizyon": 11.54,
+     "Pas": 11.42,
+     "İlk Kontrol": 6.45,
+     "Karar Alma": 6.36,
+     "Teknik": 6.0,
+     "Topsuz Alan": 6.15,
+     "Soğukkanlılık": 4.21,
+     "Uzaktan Şut": 5.65,
+     "Çalışkanlık": 4.03,
+     "Önsezi": 2.45,
+     "Dripling": 4.52,
+     "Mevki Alma": 2.26,
+     "Top Kapma": 2.26,
+     "Bitiricilik": 3.89,
+     "Çeviklik": 2.42,
+     "Hızlanma": 2.42,
+     "İşbirliği": 2.42,
+     "Dayanıklılık": 2.42,
+     "Orta Yapma": 3.39,
+     "Denge": 2.15,
+     "Agresiflik": 1.51,
+     "FC_Zayıf Ayak": 2.51,
+     "Özel Yetenek": 2.38,
+     "Markaj": 1.19
+    },
+    "DG": {
+     "Vizyon": 9.22,
+     "Pas": 9.12,
+     "İlk Kontrol": 7.21,
+     "Karar Alma": 7.11,
+     "Teknik": 6.71,
+     "Topsuz Alan": 4.91,
+     "Soğukkanlılık": 4.71,
+     "Uzaktan Şut": 4.51,
+     "Çalışkanlık": 4.51,
+     "Önsezi": 3.91,
+     "Dripling": 3.61,
+     "Mevki Alma": 3.61,
+     "Top Kapma": 3.61,
+     "Bitiricilik": 3.11,
+     "Çeviklik": 2.71,
+     "Hızlanma": 2.71,
+     "İşbirliği": 2.71,
+     "Dayanıklılık": 2.71,
+     "Orta Yapma": 2.71,
+     "Denge": 2.4,
+     "Agresiflik": 2.4,
+     "FC_Zayıf Ayak": 2.0,
+     "Özel Yetenek": 1.9,
+     "Markaj": 1.9
+    },
+    "SV": {
+     "Vizyon": 6.88,
+     "Pas": 6.8,
+     "İlk Kontrol": 7.69,
+     "Karar Alma": 7.58,
+     "Teknik": 7.15,
+     "Topsuz Alan": 3.66,
+     "Soğukkanlılık": 5.02,
+     "Uzaktan Şut": 3.36,
+     "Çalışkanlık": 4.8,
+     "Önsezi": 5.83,
+     "Dripling": 2.69,
+     "Mevki Alma": 5.38,
+     "Top Kapma": 5.38,
+     "Bitiricilik": 2.32,
+     "Çeviklik": 2.88,
+     "Hızlanma": 2.88,
+     "İşbirliği": 2.88,
+     "Dayanıklılık": 2.88,
+     "Orta Yapma": 2.02,
+     "Denge": 2.56,
+     "Agresiflik": 3.59,
+     "FC_Zayıf Ayak": 1.49,
+     "Özel Yetenek": 1.42,
+     "Markaj": 2.84
+    }
+   }
+  },
+  "AM_SHA": {
+   "pozisyon": "AM",
+   "kod": "SHA",
+   "ad": "Gizli Forvet",
+   "agirliklar": {
+    "Topsuz Alan": {
+     "w": 11.48,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Bitiricilik": {
+     "w": 11.08,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 10.78,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 9.48,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 8.08,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 7.58,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 6.59,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 5.69,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 5.69,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 5.29,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 2.79,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Pas": {
+     "w": 2.79,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Uzaktan Şut": {
+     "w": 2.69,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Güç": {
+     "w": 2.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 2.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 2.0,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Topsuz Alan": 14.65,
+     "Bitiricilik": 14.14,
+     "Hızlanma": 9.83,
+     "Önsezi": 6.05,
+     "Soğukkanlılık": 7.37,
+     "İlk Kontrol": 6.91,
+     "Karar Alma": 6.0,
+     "Teknik": 5.19,
+     "Çeviklik": 5.19,
+     "Dayanıklılık": 4.82,
+     "Vizyon": 3.57,
+     "Pas": 3.57,
+     "Uzaktan Şut": 3.44,
+     "Güç": 1.82,
+     "Zıplama": 1.82,
+     "Cesaret": 1.27,
+     "FC_Patlayıcılık": 1.82,
+     "FC_Şut Gücü": 2.55
+    },
+    "DG": {
+     "Topsuz Alan": 11.48,
+     "Bitiricilik": 11.08,
+     "Hızlanma": 10.78,
+     "Önsezi": 9.48,
+     "Soğukkanlılık": 8.08,
+     "İlk Kontrol": 7.58,
+     "Karar Alma": 6.59,
+     "Teknik": 5.69,
+     "Çeviklik": 5.69,
+     "Dayanıklılık": 5.29,
+     "Vizyon": 2.79,
+     "Pas": 2.79,
+     "Uzaktan Şut": 2.69,
+     "Güç": 2.0,
+     "Zıplama": 2.0,
+     "Cesaret": 2.0,
+     "FC_Patlayıcılık": 2.0,
+     "FC_Şut Gücü": 2.0
+    },
+    "SV": {
+     "Topsuz Alan": 8.48,
+     "Bitiricilik": 8.18,
+     "Hızlanma": 11.38,
+     "Önsezi": 14.01,
+     "Soğukkanlılık": 8.53,
+     "İlk Kontrol": 8.01,
+     "Karar Alma": 6.95,
+     "Teknik": 6.0,
+     "Çeviklik": 6.0,
+     "Dayanıklılık": 5.58,
+     "Vizyon": 2.06,
+     "Pas": 2.06,
+     "Uzaktan Şut": 1.99,
+     "Güç": 2.11,
+     "Zıplama": 2.11,
+     "Cesaret": 2.95,
+     "FC_Patlayıcılık": 2.11,
+     "FC_Şut Gücü": 1.47
+    }
+   }
+  },
+  "AM_TRE": {
+   "pozisyon": "AM",
+   "kod": "TRE",
+   "ad": "Serbest Oyuncu",
+   "agirliklar": {
+    "Özel Yetenek": {
+     "w": 10.39,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 8.59,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Teknik": {
+     "w": 7.69,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 7.69,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 6.39,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 6.39,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 6.19,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 6.09,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 5.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 5.59,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Topsuz Alan": {
+     "w": 4.7,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 4.3,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 4.2,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Bitiricilik": {
+     "w": 3.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hız": {
+     "w": 3.4,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çalışkanlık": {
+     "w": 2.5,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 2.3,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Özel Yetenek": 12.46,
+     "Dripling": 10.3,
+     "Teknik": 6.59,
+     "Vizyon": 9.22,
+     "Hızlanma": 5.48,
+     "Soğukkanlılık": 5.48,
+     "İlk Kontrol": 5.3,
+     "Çeviklik": 5.22,
+     "Karar Alma": 4.96,
+     "Pas": 6.71,
+     "Topsuz Alan": 5.63,
+     "Denge": 3.68,
+     "Önsezi": 2.52,
+     "Bitiricilik": 4.55,
+     "Hız": 2.91,
+     "Çalışkanlık": 2.14,
+     "Uzaktan Şut": 2.75,
+     "FC_Zayıf Ayak": 2.4,
+     "FC_Patlayıcılık": 1.71
+    },
+    "DG": {
+     "Özel Yetenek": 10.39,
+     "Dripling": 8.59,
+     "Teknik": 7.69,
+     "Vizyon": 7.69,
+     "Hızlanma": 6.39,
+     "Soğukkanlılık": 6.39,
+     "İlk Kontrol": 6.19,
+     "Çeviklik": 6.09,
+     "Karar Alma": 5.79,
+     "Pas": 5.59,
+     "Topsuz Alan": 4.7,
+     "Denge": 4.3,
+     "Önsezi": 4.2,
+     "Bitiricilik": 3.8,
+     "Hız": 3.4,
+     "Çalışkanlık": 2.5,
+     "Uzaktan Şut": 2.3,
+     "FC_Zayıf Ayak": 2.0,
+     "FC_Patlayıcılık": 2.0
+    },
+    "SV": {
+     "Özel Yetenek": 8.25,
+     "Dripling": 6.82,
+     "Teknik": 8.73,
+     "Vizyon": 6.11,
+     "Hızlanma": 7.25,
+     "Soğukkanlılık": 7.25,
+     "İlk Kontrol": 7.03,
+     "Çeviklik": 6.91,
+     "Karar Alma": 6.57,
+     "Pas": 4.44,
+     "Topsuz Alan": 3.73,
+     "Denge": 4.87,
+     "Önsezi": 6.66,
+     "Bitiricilik": 3.01,
+     "Hız": 3.85,
+     "Çalışkanlık": 2.83,
+     "Uzaktan Şut": 1.82,
+     "FC_Zayıf Ayak": 1.59,
+     "FC_Patlayıcılık": 2.27
+    }
+   }
+  },
+  "W_W_KL": {
+   "pozisyon": "W",
+   "kod": "W_KL",
+   "ad": "Klasik Kanat",
+   "agirliklar": {
+    "Hızlanma": {
+     "w": 10.61,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 9.71,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Orta Yapma": {
+     "w": 9.11,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Çeviklik": {
+     "w": 8.41,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 8.11,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 6.71,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 6.51,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 6.51,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Özel Yetenek": {
+     "w": 5.91,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 5.41,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 4.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 3.7,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Bitiricilik": {
+     "w": 3.6,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 3.4,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Denge": {
+     "w": 3.0,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 1.7,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Hızlanma": 9.28,
+     "Dripling": 11.88,
+     "Orta Yapma": 11.15,
+     "Çeviklik": 7.35,
+     "Hız": 7.09,
+     "Teknik": 5.86,
+     "İlk Kontrol": 5.69,
+     "Topsuz Alan": 7.96,
+     "Özel Yetenek": 7.23,
+     "Karar Alma": 4.73,
+     "Soğukkanlılık": 4.11,
+     "Pas": 4.53,
+     "Bitiricilik": 4.41,
+     "Önsezi": 2.08,
+     "Denge": 2.63,
+     "FC_Patlayıcılık": 2.54,
+     "Dayanıklılık": 1.49
+    },
+    "DG": {
+     "Hızlanma": 10.61,
+     "Dripling": 9.71,
+     "Orta Yapma": 9.11,
+     "Çeviklik": 8.41,
+     "Hız": 8.11,
+     "Teknik": 6.71,
+     "İlk Kontrol": 6.51,
+     "Topsuz Alan": 6.51,
+     "Özel Yetenek": 5.91,
+     "Karar Alma": 5.41,
+     "Soğukkanlılık": 4.7,
+     "Pas": 3.7,
+     "Bitiricilik": 3.6,
+     "Önsezi": 3.4,
+     "Denge": 3.0,
+     "FC_Patlayıcılık": 2.9,
+     "Dayanıklılık": 1.7
+    },
+    "SV": {
+     "Hızlanma": 11.82,
+     "Dripling": 7.57,
+     "Orta Yapma": 7.1,
+     "Çeviklik": 9.36,
+     "Hız": 9.03,
+     "Teknik": 7.47,
+     "İlk Kontrol": 7.25,
+     "Topsuz Alan": 5.07,
+     "Özel Yetenek": 4.6,
+     "Karar Alma": 6.02,
+     "Soğukkanlılık": 5.24,
+     "Pas": 2.89,
+     "Bitiricilik": 2.81,
+     "Önsezi": 5.31,
+     "Denge": 3.34,
+     "FC_Patlayıcılık": 3.23,
+     "Dayanıklılık": 1.89
+    }
+   }
+  },
+  "W_IF": {
+   "pozisyon": "W",
+   "kod": "IF",
+   "ad": "Kanat Forvet",
+   "agirliklar": {
+    "Bitiricilik": {
+     "w": 10.58,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Topsuz Alan": {
+     "w": 9.68,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 9.28,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 8.58,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 6.69,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 5.39,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Uzaktan Şut": {
+     "w": 5.29,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 5.29,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 5.19,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 5.09,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 4.99,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 4.19,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Özel Yetenek": {
+     "w": 3.49,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 3.39,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.89,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.79,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 2.59,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 1.8,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Kafa Vuruşu": {
+     "w": 1.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Bitiricilik": 12.68,
+     "Topsuz Alan": 11.61,
+     "Hızlanma": 7.95,
+     "Dripling": 10.29,
+     "İlk Kontrol": 5.73,
+     "Çeviklik": 4.61,
+     "Uzaktan Şut": 6.34,
+     "Önsezi": 3.17,
+     "Hız": 4.44,
+     "Teknik": 4.36,
+     "Soğukkanlılık": 4.27,
+     "Karar Alma": 3.59,
+     "Özel Yetenek": 4.19,
+     "Denge": 2.91,
+     "FC_Şut Gücü": 3.47,
+     "FC_Patlayıcılık": 2.39,
+     "Pas": 3.11,
+     "FC_Zayıf Ayak": 2.15,
+     "Kafa Vuruşu": 1.54,
+     "Orta Yapma": 1.2
+    },
+    "DG": {
+     "Bitiricilik": 10.58,
+     "Topsuz Alan": 9.68,
+     "Hızlanma": 9.28,
+     "Dripling": 8.58,
+     "İlk Kontrol": 6.69,
+     "Çeviklik": 5.39,
+     "Uzaktan Şut": 5.29,
+     "Önsezi": 5.29,
+     "Hız": 5.19,
+     "Teknik": 5.09,
+     "Soğukkanlılık": 4.99,
+     "Karar Alma": 4.19,
+     "Özel Yetenek": 3.49,
+     "Denge": 3.39,
+     "FC_Şut Gücü": 2.89,
+     "FC_Patlayıcılık": 2.79,
+     "Pas": 2.59,
+     "FC_Zayıf Ayak": 1.8,
+     "Kafa Vuruşu": 1.8,
+     "Orta Yapma": 1.0
+    },
+    "SV": {
+     "Bitiricilik": 8.38,
+     "Topsuz Alan": 7.67,
+     "Hızlanma": 10.51,
+     "Dripling": 6.8,
+     "İlk Kontrol": 7.57,
+     "Çeviklik": 6.1,
+     "Uzaktan Şut": 4.19,
+     "Önsezi": 8.38,
+     "Hız": 5.87,
+     "Teknik": 5.76,
+     "Soğukkanlılık": 5.65,
+     "Karar Alma": 4.74,
+     "Özel Yetenek": 2.77,
+     "Denge": 3.84,
+     "FC_Şut Gücü": 2.29,
+     "FC_Patlayıcılık": 3.16,
+     "Pas": 2.06,
+     "FC_Zayıf Ayak": 1.42,
+     "Kafa Vuruşu": 2.03,
+     "Orta Yapma": 0.79
+    }
+   }
+  },
+  "W_IW": {
+   "pozisyon": "W",
+   "kod": "IW",
+   "ad": "İç Kanat Oyuncusu",
+   "agirliklar": {
+    "Dripling": {
+     "w": 10.2,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Vizyon": {
+     "w": 9.1,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Teknik": {
+     "w": 9.0,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 8.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 7.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Orta Yapma": {
+     "w": 7.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 7.1,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 5.8,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 5.2,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Özel Yetenek": {
+     "w": 4.8,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Uzaktan Şut": {
+     "w": 3.9,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Topsuz Alan": {
+     "w": 3.7,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 3.6,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 3.6,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 2.8,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Denge": {
+     "w": 2.7,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Mevki Alma": {
+     "w": 1.8,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "Bitiricilik": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Dripling": 11.97,
+     "Vizyon": 10.68,
+     "Teknik": 7.54,
+     "İlk Kontrol": 7.46,
+     "Pas": 8.68,
+     "Orta Yapma": 8.68,
+     "Hızlanma": 5.95,
+     "Çeviklik": 4.86,
+     "Karar Alma": 4.36,
+     "Özel Yetenek": 5.63,
+     "Uzaktan Şut": 4.58,
+     "Topsuz Alan": 4.34,
+     "Önsezi": 2.11,
+     "Soğukkanlılık": 3.02,
+     "FC_Zayıf Ayak": 3.29,
+     "Denge": 2.26,
+     "FC_Şut Gücü": 2.35,
+     "Mevki Alma": 1.06,
+     "Bitiricilik": 1.17
+    },
+    "DG": {
+     "Dripling": 10.2,
+     "Vizyon": 9.1,
+     "Teknik": 9.0,
+     "İlk Kontrol": 8.9,
+     "Pas": 7.4,
+     "Orta Yapma": 7.4,
+     "Hızlanma": 7.1,
+     "Çeviklik": 5.8,
+     "Karar Alma": 5.2,
+     "Özel Yetenek": 4.8,
+     "Uzaktan Şut": 3.9,
+     "Topsuz Alan": 3.7,
+     "Önsezi": 3.6,
+     "Soğukkanlılık": 3.6,
+     "FC_Zayıf Ayak": 2.8,
+     "Denge": 2.7,
+     "FC_Şut Gücü": 2.0,
+     "Mevki Alma": 1.8,
+     "Bitiricilik": 1.0
+    },
+    "SV": {
+     "Dripling": 8.26,
+     "Vizyon": 7.37,
+     "Teknik": 10.41,
+     "İlk Kontrol": 10.29,
+     "Pas": 5.99,
+     "Orta Yapma": 5.99,
+     "Hızlanma": 8.21,
+     "Çeviklik": 6.71,
+     "Karar Alma": 6.01,
+     "Özel Yetenek": 3.89,
+     "Uzaktan Şut": 3.16,
+     "Topsuz Alan": 3.0,
+     "Önsezi": 5.83,
+     "Soğukkanlılık": 4.16,
+     "FC_Zayıf Ayak": 2.27,
+     "Denge": 3.12,
+     "FC_Şut Gücü": 1.62,
+     "Mevki Alma": 2.91,
+     "Bitiricilik": 0.81
+    }
+   }
+  },
+  "W_WM": {
+   "pozisyon": "W",
+   "kod": "WM",
+   "ad": "Çalışkan Kanat",
+   "agirliklar": {
+    "Çalışkanlık": {
+     "w": 10.52,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 9.52,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 7.01,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Top Kapma": {
+     "w": 6.71,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Dripling": {
+     "w": 6.61,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Mevki Alma": {
+     "w": 5.71,
+     "kaynak": "BS-B(GK)/FM-only(saha)",
+     "grup": "SAV"
+    },
+    "İlk Kontrol": {
+     "w": 5.71,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 5.61,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 5.31,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Orta Yapma": {
+     "w": 4.41,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 4.31,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "İşbirliği": {
+     "w": 4.21,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 3.11,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Markaj": {
+     "w": 3.01,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "Teknik": {
+     "w": 3.01,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 3.01,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Agresiflik": {
+     "w": 2.91,
+     "kaynak": "BS-A",
+     "grup": "SAV"
+    },
+    "FC_Top Kesmeler": {
+     "w": 2.91,
+     "kaynak": "FC-native",
+     "grup": "SAV"
+    },
+    "Kafa Vuruşu": {
+     "w": 2.3,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 2.3,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 1.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Çalışkanlık": 10.92,
+     "Dayanıklılık": 9.88,
+     "Hızlanma": 7.28,
+     "Top Kapma": 4.88,
+     "Dripling": 9.61,
+     "Mevki Alma": 4.15,
+     "İlk Kontrol": 5.93,
+     "Hız": 5.83,
+     "Karar Alma": 5.51,
+     "Orta Yapma": 6.41,
+     "Önsezi": 3.13,
+     "İşbirliği": 4.37,
+     "Konsantrasyon": 2.26,
+     "Markaj": 2.18,
+     "Teknik": 3.12,
+     "Pas": 4.37,
+     "Agresiflik": 2.11,
+     "FC_Top Kesmeler": 2.11,
+     "Kafa Vuruşu": 2.39,
+     "Cesaret": 1.67,
+     "Soğukkanlılık": 1.87
+    },
+    "DG": {
+     "Çalışkanlık": 10.52,
+     "Dayanıklılık": 9.52,
+     "Hızlanma": 7.01,
+     "Top Kapma": 6.71,
+     "Dripling": 6.61,
+     "Mevki Alma": 5.71,
+     "İlk Kontrol": 5.71,
+     "Hız": 5.61,
+     "Karar Alma": 5.31,
+     "Orta Yapma": 4.41,
+     "Önsezi": 4.31,
+     "İşbirliği": 4.21,
+     "Konsantrasyon": 3.11,
+     "Markaj": 3.01,
+     "Teknik": 3.01,
+     "Pas": 3.01,
+     "Agresiflik": 2.91,
+     "FC_Top Kesmeler": 2.91,
+     "Kafa Vuruşu": 2.3,
+     "Cesaret": 2.3,
+     "Soğukkanlılık": 1.8
+    },
+    "SV": {
+     "Çalışkanlık": 9.73,
+     "Dayanıklılık": 8.8,
+     "Hızlanma": 6.48,
+     "Top Kapma": 8.69,
+     "Dripling": 4.28,
+     "Mevki Alma": 7.39,
+     "İlk Kontrol": 5.28,
+     "Hız": 5.19,
+     "Karar Alma": 4.91,
+     "Orta Yapma": 2.85,
+     "Önsezi": 5.58,
+     "İşbirliği": 3.89,
+     "Konsantrasyon": 4.02,
+     "Markaj": 3.89,
+     "Teknik": 2.78,
+     "Pas": 1.95,
+     "Agresiflik": 3.76,
+     "FC_Top Kesmeler": 3.76,
+     "Kafa Vuruşu": 2.13,
+     "Cesaret": 2.98,
+     "Soğukkanlılık": 1.67
+    }
+   }
+  },
+  "ST_9": {
+   "pozisyon": "ST",
+   "kod": "9",
+   "ad": "9 Numara",
+   "agirliklar": {
+    "Hızlanma": {
+     "w": 10.28,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Bitiricilik": {
+     "w": 8.58,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Soğukkanlılık": {
+     "w": 6.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 6.79,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Güç": {
+     "w": 6.59,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hız": {
+     "w": 6.59,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 6.09,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Kafa Vuruşu": {
+     "w": 5.59,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Cesaret": {
+     "w": 4.89,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Zıplama": {
+     "w": 4.79,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Dripling": {
+     "w": 4.69,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Teknik": {
+     "w": 4.69,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Önsezi": {
+     "w": 4.39,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Karar Alma": {
+     "w": 4.29,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Vücut Zindeliği": {
+     "w": 4.29,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 3.79,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.3,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "İşbirliği": {
+     "w": 1.7,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 0.9,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Hızlanma": 9.41,
+     "Bitiricilik": 11.01,
+     "Soğukkanlılık": 6.22,
+     "Topsuz Alan": 8.7,
+     "Güç": 6.03,
+     "Hız": 6.03,
+     "İlk Kontrol": 5.58,
+     "Kafa Vuruşu": 5.12,
+     "Cesaret": 4.48,
+     "Zıplama": 4.39,
+     "Dripling": 6.01,
+     "Teknik": 4.3,
+     "Önsezi": 4.02,
+     "Karar Alma": 3.93,
+     "Vücut Zindeliği": 3.93,
+     "Dayanıklılık": 3.47,
+     "Denge": 2.1,
+     "FC_Şut Gücü": 2.56,
+     "İşbirliği": 1.55,
+     "Pas": 1.15
+    },
+    "DG": {
+     "Hızlanma": 10.28,
+     "Bitiricilik": 8.58,
+     "Soğukkanlılık": 6.79,
+     "Topsuz Alan": 6.79,
+     "Güç": 6.59,
+     "Hız": 6.59,
+     "İlk Kontrol": 6.09,
+     "Kafa Vuruşu": 5.59,
+     "Cesaret": 4.89,
+     "Zıplama": 4.79,
+     "Dripling": 4.69,
+     "Teknik": 4.69,
+     "Önsezi": 4.39,
+     "Karar Alma": 4.29,
+     "Vücut Zindeliği": 4.29,
+     "Dayanıklılık": 3.79,
+     "Denge": 2.3,
+     "FC_Şut Gücü": 2.0,
+     "İşbirliği": 1.7,
+     "Pas": 0.9
+    },
+    "SV": {
+     "Hızlanma": 11.04,
+     "Bitiricilik": 6.45,
+     "Soğukkanlılık": 7.29,
+     "Topsuz Alan": 5.1,
+     "Güç": 7.07,
+     "Hız": 7.07,
+     "İlk Kontrol": 6.54,
+     "Kafa Vuruşu": 6.0,
+     "Cesaret": 5.25,
+     "Zıplama": 5.14,
+     "Dripling": 3.53,
+     "Teknik": 5.04,
+     "Önsezi": 4.72,
+     "Karar Alma": 4.61,
+     "Vücut Zindeliği": 4.61,
+     "Dayanıklılık": 4.07,
+     "Denge": 2.47,
+     "FC_Şut Gücü": 1.5,
+     "İşbirliği": 1.82,
+     "Pas": 0.68
+    }
+   },
+   "ebeveyn": true,
+   "kimlik_kilidi": [
+    "SAV"
+   ]
+  },
+  "ST_F9": {
+   "pozisyon": "ST",
+   "kod": "F9",
+   "ad": "Sahte 9",
+   "agirliklar": {
+    "Vizyon": {
+     "w": 11.12,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 10.32,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 10.02,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Pas": {
+     "w": 9.32,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 8.92,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 8.32,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 7.31,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 7.11,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Özel Yetenek": {
+     "w": 5.91,
+     "kaynak": "BS-B",
+     "grup": "HUC"
+    },
+    "Hızlanma": {
+     "w": 5.61,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 5.31,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 3.61,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "FC_Zayıf Ayak": {
+     "w": 2.91,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Orta Yapma": {
+     "w": 2.4,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İşbirliği": {
+     "w": 1.8,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Vizyon": 13.21,
+     "Dripling": 12.26,
+     "İlk Kontrol": 8.5,
+     "Pas": 11.07,
+     "Karar Alma": 7.57,
+     "Çeviklik": 7.06,
+     "Teknik": 6.21,
+     "Soğukkanlılık": 6.04,
+     "Özel Yetenek": 7.02,
+     "Hızlanma": 4.76,
+     "Topsuz Alan": 6.31,
+     "Önsezi": 2.14,
+     "FC_Zayıf Ayak": 3.45,
+     "Orta Yapma": 2.86,
+     "İşbirliği": 1.53
+    },
+    "DG": {
+     "Vizyon": 11.12,
+     "Dripling": 10.32,
+     "İlk Kontrol": 10.02,
+     "Pas": 9.32,
+     "Karar Alma": 8.92,
+     "Çeviklik": 8.32,
+     "Teknik": 7.31,
+     "Soğukkanlılık": 7.11,
+     "Özel Yetenek": 5.91,
+     "Hızlanma": 5.61,
+     "Topsuz Alan": 5.31,
+     "Önsezi": 3.61,
+     "FC_Zayıf Ayak": 2.91,
+     "Orta Yapma": 2.4,
+     "İşbirliği": 1.8
+    },
+    "SV": {
+     "Vizyon": 8.92,
+     "Dripling": 8.28,
+     "İlk Kontrol": 11.48,
+     "Pas": 7.48,
+     "Karar Alma": 10.22,
+     "Çeviklik": 9.53,
+     "Teknik": 8.38,
+     "Soğukkanlılık": 8.15,
+     "Özel Yetenek": 4.74,
+     "Hızlanma": 6.43,
+     "Topsuz Alan": 4.26,
+     "Önsezi": 5.79,
+     "FC_Zayıf Ayak": 2.33,
+     "Orta Yapma": 1.93,
+     "İşbirliği": 2.07
+    }
+   }
+  },
+  "ST_DLF": {
+   "pozisyon": "ST",
+   "kod": "DLF",
+   "ad": "Yardımcı Forvet",
+   "agirliklar": {
+    "Pas": {
+     "w": 10.1,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İlk Kontrol": {
+     "w": 10.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Vizyon": {
+     "w": 9.1,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Karar Alma": {
+     "w": 8.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İşbirliği": {
+     "w": 7.4,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 7.0,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Güç": {
+     "w": 6.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Soğukkanlılık": {
+     "w": 6.0,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Dayanıklılık": {
+     "w": 5.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 4.9,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 4.9,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Bitiricilik": {
+     "w": 4.8,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 4.1,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 3.9,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Hızlanma": {
+     "w": 3.1,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 2.9,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Pas": 12.62,
+     "İlk Kontrol": 8.93,
+     "Vizyon": 11.37,
+     "Karar Alma": 7.94,
+     "İşbirliği": 6.61,
+     "Teknik": 6.25,
+     "Güç": 6.16,
+     "Soğukkanlılık": 5.36,
+     "Dayanıklılık": 4.46,
+     "Çeviklik": 4.37,
+     "Topsuz Alan": 6.12,
+     "Bitiricilik": 6.0,
+     "Dripling": 5.12,
+     "Önsezi": 2.44,
+     "Hızlanma": 2.77,
+     "Denge": 2.59,
+     "Zıplama": 0.89
+    },
+    "DG": {
+     "Pas": 10.1,
+     "İlk Kontrol": 10.0,
+     "Vizyon": 9.1,
+     "Karar Alma": 8.9,
+     "İşbirliği": 7.4,
+     "Teknik": 7.0,
+     "Güç": 6.9,
+     "Soğukkanlılık": 6.0,
+     "Dayanıklılık": 5.0,
+     "Çeviklik": 4.9,
+     "Topsuz Alan": 4.9,
+     "Bitiricilik": 4.8,
+     "Dripling": 4.1,
+     "Önsezi": 3.9,
+     "Hızlanma": 3.1,
+     "Denge": 2.9,
+     "Zıplama": 1.0
+    },
+    "SV": {
+     "Pas": 7.71,
+     "İlk Kontrol": 10.91,
+     "Vizyon": 6.95,
+     "Karar Alma": 9.71,
+     "İşbirliği": 8.07,
+     "Teknik": 7.64,
+     "Güç": 7.53,
+     "Soğukkanlılık": 6.55,
+     "Dayanıklılık": 5.45,
+     "Çeviklik": 5.35,
+     "Topsuz Alan": 3.74,
+     "Bitiricilik": 3.67,
+     "Dripling": 3.13,
+     "Önsezi": 5.96,
+     "Hızlanma": 3.38,
+     "Denge": 3.16,
+     "Zıplama": 1.09
+    }
+   }
+  },
+  "ST_POA": {
+   "pozisyon": "ST",
+   "kod": "POA",
+   "ad": "Fırsatçı Forvet",
+   "agirliklar": {
+    "Topsuz Alan": {
+     "w": 12.89,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Bitiricilik": {
+     "w": 11.99,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Önsezi": {
+     "w": 11.09,
+     "kaynak": "BS-B",
+     "grup": "SAV"
+    },
+    "Soğukkanlılık": {
+     "w": 8.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 6.99,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Hızlanma": {
+     "w": 6.89,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 6.79,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Kafa Vuruşu": {
+     "w": 6.39,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Konsantrasyon": {
+     "w": 4.9,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Hız": {
+     "w": 4.6,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 4.2,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Çeviklik": {
+     "w": 3.5,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 3.1,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Teknik": {
+     "w": 2.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Patlayıcılık": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "kontrast_haric": true,
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.0,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Dripling": {
+     "w": 1.0,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Topsuz Alan": 16.23,
+     "Bitiricilik": 15.1,
+     "Önsezi": 9.98,
+     "Soğukkanlılık": 7.91,
+     "İlk Kontrol": 6.29,
+     "Hızlanma": 6.2,
+     "Karar Alma": 6.11,
+     "Kafa Vuruşu": 5.75,
+     "Konsantrasyon": 4.4,
+     "Hız": 4.13,
+     "Zıplama": 3.77,
+     "Çeviklik": 3.15,
+     "Denge": 2.79,
+     "Teknik": 2.61,
+     "FC_Patlayıcılık": 1.8,
+     "FC_Şut Gücü": 2.52,
+     "Dripling": 1.26
+    },
+    "DG": {
+     "Topsuz Alan": 12.89,
+     "Bitiricilik": 11.99,
+     "Önsezi": 11.09,
+     "Soğukkanlılık": 8.79,
+     "İlk Kontrol": 6.99,
+     "Hızlanma": 6.89,
+     "Karar Alma": 6.79,
+     "Kafa Vuruşu": 6.39,
+     "Konsantrasyon": 4.9,
+     "Hız": 4.6,
+     "Zıplama": 4.2,
+     "Çeviklik": 3.5,
+     "Denge": 3.1,
+     "Teknik": 2.9,
+     "FC_Patlayıcılık": 2.0,
+     "FC_Şut Gücü": 2.0,
+     "Dripling": 1.0
+    },
+    "SV": {
+     "Topsuz Alan": 9.84,
+     "Bitiricilik": 9.16,
+     "Önsezi": 12.1,
+     "Soğukkanlılık": 9.59,
+     "İlk Kontrol": 7.63,
+     "Hızlanma": 7.52,
+     "Karar Alma": 7.41,
+     "Kafa Vuruşu": 6.98,
+     "Konsantrasyon": 5.34,
+     "Hız": 5.01,
+     "Zıplama": 4.58,
+     "Çeviklik": 3.82,
+     "Denge": 3.38,
+     "Teknik": 3.16,
+     "FC_Patlayıcılık": 2.18,
+     "FC_Şut Gücü": 1.53,
+     "Dripling": 0.76
+    }
+   },
+   "kimlik_kilidi": [
+    "SAV"
+   ]
+  },
+  "ST_TF": {
+   "pozisyon": "ST",
+   "kod": "TF",
+   "ad": "Pivot Forvet",
+   "agirliklar": {
+    "Güç": {
+     "w": 17.78,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Zıplama": {
+     "w": 13.89,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Kafa Vuruşu": {
+     "w": 13.09,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "İlk Kontrol": {
+     "w": 9.99,
+     "kaynak": "BS-A",
+     "grup": "NOTR"
+    },
+    "Topsuz Alan": {
+     "w": 8.79,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "Cesaret": {
+     "w": 7.89,
+     "kaynak": "FM-only",
+     "grup": "SAV"
+    },
+    "Bitiricilik": {
+     "w": 7.89,
+     "kaynak": "BS-A",
+     "grup": "HUC"
+    },
+    "İşbirliği": {
+     "w": 7.49,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "Denge": {
+     "w": 5.89,
+     "kaynak": "BS-B",
+     "grup": "NOTR"
+    },
+    "Karar Alma": {
+     "w": 2.9,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    },
+    "FC_Şut Gücü": {
+     "w": 2.9,
+     "kaynak": "FC-native",
+     "grup": "HUC"
+    },
+    "Vücut Zindeliği": {
+     "w": 1.5,
+     "kaynak": "FM-only",
+     "grup": "NOTR"
+    }
+   },
+   "stiller": {
+    "HC": {
+     "Güç": 16.49,
+     "Zıplama": 12.88,
+     "Kafa Vuruşu": 12.14,
+     "İlk Kontrol": 9.26,
+     "Topsuz Alan": 11.41,
+     "Cesaret": 7.32,
+     "Bitiricilik": 10.25,
+     "İşbirliği": 6.95,
+     "Denge": 5.47,
+     "Karar Alma": 2.69,
+     "FC_Şut Gücü": 3.76,
+     "Vücut Zindeliği": 1.39
+    },
+    "DG": {
+     "Güç": 17.78,
+     "Zıplama": 13.89,
+     "Kafa Vuruşu": 13.09,
+     "İlk Kontrol": 9.99,
+     "Topsuz Alan": 8.79,
+     "Cesaret": 7.89,
+     "Bitiricilik": 7.89,
+     "İşbirliği": 7.49,
+     "Denge": 5.89,
+     "Karar Alma": 2.9,
+     "FC_Şut Gücü": 2.9,
+     "Vücut Zindeliği": 1.5
+    },
+    "SV": {
+     "Güç": 18.89,
+     "Zıplama": 14.75,
+     "Kafa Vuruşu": 13.9,
+     "İlk Kontrol": 10.61,
+     "Topsuz Alan": 6.54,
+     "Cesaret": 8.38,
+     "Bitiricilik": 5.87,
+     "İşbirliği": 7.96,
+     "Denge": 6.26,
+     "Karar Alma": 3.08,
+     "FC_Şut Gücü": 2.15,
+     "Vücut Zindeliği": 1.59
+    }
+   },
+   "kimlik_kilidi": [
+    "SAV"
+   ]
+  }
+ }
+}
