@@ -213,7 +213,10 @@ BS_B_GK_ONLY = {  # yalnız kaleci havuzunda sınıf B; sahada FM-only
 }
 BS_FM_ONLY = ['Soğukkanlılık','Birebir','Bölge Hakimiyeti','Hava Topları','Karar Alma','Teknik',
  'Cesaret','Konsantrasyon','Çalışkanlık','İşbirliği','Liderlik','Kararlılık','Vücut Zindeliği',
- 'İletişim','Elle Oyun Başlatma','Yumruklama','Ani Çıkış Eğilimi','Eksantriklik']
+ 'İletişim','Elle Oyun Başlatma','Yumruklama','Ani Çıkış Eğilimi','Eksantriklik',
+ 'Sakatlanma Eğilimi']  # FC karşılığı yok; TERS yönlü (düşük=iyi/sağlam, yüksek=kötü/kronik) —
+ # bu yönü BS katmanı çevirmez (diğer eksenlerle aynı ham FM×5 mantığı), yalnız frontend'in
+ # kademe ETİKETİ seçimi tersine çevrilir (bkz. build_frontend BS_TIER_LABELS_BY_FIELD)
 BS_FC_NATIVE = {  # FM'de karşılığı YOK -> bağımsız eksen (roller.json'da FC_ önekiyle anılır)
  'FC_Şut Gücü':    ('FC_Şut Gücü', 1.0),      # FM_Güç ile r=0.08
  'FC_Top Kesmeler':('FC_Top Kesmeler', 1.0),  # tackling ≠ pas kesme (semantik)

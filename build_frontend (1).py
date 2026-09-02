@@ -1605,12 +1605,23 @@ const BS_LABEL={
   'Önsezi':'Sezgi', 'Vücut Zindeliği':'Atletizm', 'Ani Çıkış Eğilimi':'Çıkış Zamanlaması',
   'Eksantriklik':'Eksantriklik', 'FC_Patlayıcılık':'Patlayıcılık', 'FC_Top Kesmeler':'Top Kesme',
   'FC_Uzun Adım':'Uzun Adım', 'FC_Şut Gücü':'Şut Gücü',
+  'Sakatlanma Eğilimi':'Sakatlanma Eğilimi',
 };
 // ATTRIBUTE (bs) KADEMELERİ: her eksenin motorda (natural_breaks, bkz.
 // bigstatx_engine.py) hesaplanmış KENDİ 5 kesim noktası — sabit bir aralık
 // DEĞİL, DB.meta.bs_tiers[eksen]'den okunur; eksenden eksene farklı çıkar
 // (ör. Hız ile Teknik aynı sayı aralığına denk gelmez, kasıtlı).
 const BS_TIER_LABELS=['Çok Kötü','Kötü','Ortalama','İyi','Çok İyi','Elit'];
+// Bazı eksenler TERS yönlü — ham değer düştükçe İYİLEŞİYOR (ör. Sakatlanma Eğilimi:
+// düşük FM puanı = sağlam, yüksek = kronik sakat). bsTierIndex bu eksenlerde de AYNI
+// artan-değer mantığıyla 0(en düşük ham değer)-5(en yüksek) hesaplanır — TERSİNE
+// ÇEVİRME burada yok; yalnız index 0'ın "en iyi" karşılığı BAŞKA bir kelime seti ister,
+// o yüzden eksene özel etiket dizisi kayıtlı. Genel BS_TIER_LABELS ile KARIŞMASIN diye
+// tamamen ayrık bir kelime seti kullanılır (bkz. grep kontrolü — çakışma yok).
+const BS_TIER_LABELS_BY_FIELD={
+  'Sakatlanma Eğilimi': ['Bulletproof','Sağlam','Dayanıklı','Kırılgan','Riskli','Kronik'],
+};
+function bsTierLabelsFor(field){ return BS_TIER_LABELS_BY_FIELD[field] || BS_TIER_LABELS; }
 function bsTierCuts(field){ return (DB.meta.bs_tiers||{})[field]||[]; }
 // v'nin bu eksende hangi kademeye (0-5) düştüğünü bulur (cuts artan sırada,
 // üst-uçtan itibaren üstünde/eşit olduğu ilk sınırın index'i + 1).
@@ -1622,7 +1633,7 @@ function bsTierIndex(field, v){
 }
 function bsTierLabel(field, v){
   const idx=bsTierIndex(field, v);
-  return idx==null ? '—' : (BS_TIER_LABELS[idx]||'—');
+  return idx==null ? '—' : (bsTierLabelsFor(field)[idx]||'—');
 }
 // (Potansiyel artık kademesiz — bkz. GENERAL_FIELDS.pa — BSX Potansiyel BSX Skoru ile
 // birebir aynı ham-sayı yolunu kullanır, bu fonksiyondan geçer.)
@@ -1919,7 +1930,8 @@ function renderFilterRows(){
       // yok, ham 0-100 değeri kullanıcıya hiçbir yerde gösterilmiyor. Eksene özel kesim
       // noktası kullanır (bsTierCuts(field)) — bkz. BS_LABEL için ayrı isim haritası.
       const cuts = bsTierCuts(f.field);
-      const optHtml=(sel, isMax)=>BS_TIER_LABELS.map((lbl,idx)=>{
+      const tierLabels = bsTierLabelsFor(f.field);
+      const optHtml=(sel, isMax)=>tierLabels.map((lbl,idx)=>{
         const bound = isMax ? (idx<cuts.length?' title="< '+cuts[idx]+'"':'') : (idx>=1?' title="≥ '+cuts[idx-1]+'"':'');
         return '<option value="'+idx+'"'+(sel===idx?' selected':'')+bound+'>'+esc(lbl)+'</option>';
       }).join('');
